@@ -110,14 +110,50 @@ nav a.btn{
   font-weight:600;
 }
 
-.hero-buttons .primary{
-  background:linear-gradient(90deg,var(--magenta),var(--blue));
+/* =========================================
+   BUTTON STYLES
+========================================= */
+
+/* Primary Gradient Button */
+.primary{
+  display:inline-block;
+  padding:14px 26px;
+  border-radius:14px;
+  font-weight:600;
+  font-size:15px;
+  text-decoration:none;
   color:white;
+
+  background: linear-gradient(135deg, #9333ea, #2563eb);
+  box-shadow: 0 10px 25px rgba(37,99,235,.25);
+
+  transition: all .25s ease;
 }
 
-.hero-buttons .secondary{
-  border:2px solid var(--blue);
-  color:var(--blue);
+.primary:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(37,99,235,.35);
+}
+
+/* Secondary Outline Button */
+.secondary{
+  display:inline-block;
+  padding:14px 26px;
+  border-radius:14px;
+  font-weight:600;
+  font-size:15px;
+  text-decoration:none;
+
+  border:2px solid #2563eb;
+  color:#2563eb;
+  background:white;
+
+  transition: all .25s ease;
+}
+
+.secondary:hover{
+  background:#2563eb;
+  color:white;
 }
 
 .kicker{
