@@ -1,12 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">TEMA Lab</div>
+      <nav>
+        <a href="/research/">Research</a>
+        <a href="/projects/">Projects</a>
+        <a href="/team/">Team</a>
+        <a class="btn" href="/join/">Join Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
     {{ content }}
-  </body>
+  </main>
+
+</body>
 </html>
