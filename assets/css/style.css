@@ -76,3 +76,37 @@ nav a.btn{
   max-width:1200px;
   margin:0 auto;
 }
+.hero h1{
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero h3{
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:16px;
+}
+
+.hero-buttons a{
+  padding:14px 22px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.hero-buttons .primary{
+  background:linear-gradient(90deg,var(--magenta),var(--blue));
+  color:white;
+}
+
+.hero-buttons .secondary{
+  border:2px solid var(--blue);
+  color:var(--blue);
+}
+
+
