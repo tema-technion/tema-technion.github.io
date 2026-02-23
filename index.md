@@ -3,12 +3,11 @@ layout: home
 title: TEMA Lab
 ---
 
-# TEMA Lab
-**Transport Experience & Mobility Analytics (Technion)**
+# Decision Systems for Smart Mobility
 
-We study human decision systems in mobility — combining behavioral modeling, network analytics, and decision support in data-rich environments.
+### Modeling human choice within complex mobility networks.
 
-- [Research](/research/)
-- [Projects](/projects/)
-- [Team](/team/)
-- [Join Us](/join/)
+<div class="hero-buttons">
+  <a class="primary" href="/research/">Explore Research</a>
+  <a class="secondary" href="/projects/">View Projects</a>
+</div>
