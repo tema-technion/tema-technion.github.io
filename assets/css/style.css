@@ -1,276 +1,237 @@
-/* =========================================
-   GOOGLE FONT IMPORT
-   Inter = clean, analytical, modern
-========================================= */
+/* ============================================================
+   TEMA LAB — MAIN STYLESHEET (paste entire file)
+   Goal: match Design 1 look (light, high-tech, human)
+   Notes:
+   - Uses Google Font "Inter" for clean modern typography
+   - "Lab" word in logo can be colored via .logo span
+   - Primary/secondary buttons are MAGENTA only (per request)
+   ============================================================ */
 
+/* ---------- 1) Font import (must be at top) ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-
-/* =========================================
-   COLOR SYSTEM
-========================================= */
-
+/* ---------- 2) Design tokens (colors + sizing) ---------- */
 :root{
-  --ink: #0f172a;          /* deep navy */
-  --muted: #64748b;        /* slate */
-  --blue: #2563eb;         /* electric blue */
-  --violet: #9333ea;       /* modern violet */
-  --bg-soft: #f8fafc;      /* very light background */
+  /* Core inks */
+  --ink: #0f172a;           /* deep navy text */
+  --muted: #64748b;         /* slate/secondary text */
+  --line: rgba(229,231,235,.9);
+
+  /* Brand accents (Design 1 family) */
+  --blue: #2563eb;          /* "Lab" blue + links */
+  --magenta: #a21caf;       /* primary CTA magenta */
+
+  /* Backgrounds */
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
+
+  /* Shadows */
+  --shadow-1: 0 10px 30px rgba(15,23,42,.06);
+  --shadow-2: 0 14px 34px rgba(15,23,42,.10);
+
+  /* Radius */
+  --r-lg: 18px;
+  --r-md: 14px;
 }
 
-*{ box-sizing:border-box; }
+/* ---------- 3) Base reset ---------- */
+*{ box-sizing: border-box; }
+
+html, body{
+  margin:0;
+  padding:0;
+}
 
 body{
-  margin:0;
-  font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  color:var(--ink);
-  background:var(--bg);
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
 }
 
-/* NAV */
+/* Links (default) */
+a{ color: var(--blue); }
+a:hover{ opacity: 0.95; }
+
+/* ---------- 4) NAVBAR ---------- */
+/* Sticky, light translucent bar */
 .navbar{
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:rgba(255,255,255,.86);
-  backdrop-filter: blur(8px);
-  border-bottom:1px solid rgba(229,231,235,.8);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255,255,255,.86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(229,231,235,.75);
 }
 
 .nav-container{
-  max-width:1200px;
-  margin:0 auto;
-  padding:14px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:16px;
+  gap: 16px;
 }
 
+/* Logo as a link to home */
 .logo{
-  font-weight:800;
-  letter-spacing:.2px;
-  color:var(--ink);
-  text-decoration:none;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--ink);
+  display:flex;
+  align-items: baseline;
+  gap: 6px;
 }
 
+/* Optional: if you wrap "Lab" in <span> we color it blue */
+.logo span{
+  color: var(--blue);
+  font-weight: 900;
+}
+
+/* Nav links */
 nav a{
-  color:var(--ink);
   text-decoration:none;
-  margin-left:18px;
-  font-weight:600;
-  opacity:.92;
+  color: var(--ink);
+  font-weight: 600;
+  margin-left: 18px;
+  opacity: .92;
 }
+nav a:hover{ opacity: 1; }
 
-nav a:hover{ opacity:1; }
-
+/* Top-right "Join Us" button in navbar (magenta only) */
 nav a.btn{
-  padding:10px 14px;
-  border-radius:10px;
-  background:linear-gradient(90deg,var(--magenta),var(--blue));
-  color:white;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: var(--magenta);
+  color: white;
+  box-shadow: 0 10px 20px rgba(162,28,175,.18);
 }
 
-/* HOME HERO WRAPPER */
+/* ---------- 5) HOME HERO (full width wrapper) ---------- */
 .hero{
-  min-height:72vh;
+  min-height: 72vh;
   display:flex;
   align-items:center;
-  padding:56px 20px;
-  /* temporary light background until we add your image */
-  background: radial-gradient(1200px 600px at 20% 20%, rgba(162,28,175,.10), transparent 55%),
-              radial-gradient(1000px 500px at 80% 30%, rgba(37,99,235,.12), transparent 55%),
-              linear-gradient(180deg,#ffffff,#f8fafc);
+
+  /* Light tech feel, not gloomy */
+  background:
+    radial-gradient(1200px 600px at 20% 20%, rgba(162,28,175,.10), transparent 55%),
+    radial-gradient(1000px 500px at 80% 30%, rgba(37,99,235,.10), transparent 55%),
+    linear-gradient(180deg,#ffffff,#f8fafc);
+
+  padding: 56px 20px;
 }
 
 .hero-content{
-  max-width:1200px;
-  margin:0 auto;
-}
-.hero h1{
-  font-size: 48px;
-  margin-bottom: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.hero h3{
-  font-weight: 500;
-  color: var(--muted);
-  margin-bottom: 32px;
-}
-
-.hero-buttons{
-  display:flex;
-  gap:16px;
-}
-
-.hero-buttons a{
-  padding:14px 22px;
-  border-radius:12px;
-  text-decoration:none;
-  font-weight:600;
-}
-
-/* =========================================
-   BUTTON STYLES
-========================================= */
-
-/* Primary Gradient Button */
-.primary{
-  display:inline-block;
-  padding:14px 26px;
-  border-radius:14px;
-  font-weight:600;
-  font-size:15px;
-  text-decoration:none;
-  color:white;
-
-  background: linear-gradient(135deg, #9333ea, #2563eb);
-  box-shadow: 0 10px 25px rgba(37,99,235,.25);
-
-  transition: all .25s ease;
-}
-
-.primary:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 14px 32px rgba(37,99,235,.35);
-}
-
-/* Secondary Outline Button */
-.secondary{
-  display:inline-block;
-  padding:14px 26px;
-  border-radius:14px;
-  font-weight:600;
-  font-size:15px;
-  text-decoration:none;
-
-  border:2px solid #2563eb;
-  color:#2563eb;
-  background:white;
-
-  transition: all .25s ease;
-}
-
-.secondary:hover{
-  background:#2563eb;
-  color:white;
-}
-
+/* Small uppercase line above hero title */
 .kicker{
   display:inline-block;
-  font-weight:700;
-  color:var(--muted);
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  font-size:12px;
-  margin-bottom:14px;
+  font-weight: 800;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 14px;
 }
 
+/* Hero title */
 .hero h1{
-  font-size:56px;
-  line-height:1.05;
-  margin:14px 0 14px;
+  font-size: 56px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 900;
+  margin: 14px 0 14px;
 }
 
+/* Hero subtitle */
 .hero h3{
-  font-size:20px;
-  font-weight:500;
-  margin:0 0 28px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 0 0 28px;
 }
 
-.hero h3 em{ font-style:italic; }
+/* ---------- 6) HERO BUTTONS (MAGENTA ONLY) ---------- */
+.hero-buttons{
+  display:flex;
+  gap: 16px;
+  margin: 10px 0 34px;
+}
 
-.hero-buttons{ margin: 10px 0 34px; }
+/* Both buttons share base styling */
+.hero-buttons a{
+  display:inline-block;
+  padding: 14px 26px;
+  border-radius: 14px;
+  text-decoration:none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all .25s ease;
+}
 
+/* Primary = solid magenta */
+.hero-buttons .primary{
+  background: var(--magenta);
+  color: white;
+  box-shadow: 0 12px 26px rgba(162,28,175,.22);
+}
+.hero-buttons .primary:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(162,28,175,.30);
+}
+
+/* Secondary = outlined magenta */
+.hero-buttons .secondary{
+  background: rgba(255,255,255,.90);
+  border: 2px solid var(--magenta);
+  color: var(--magenta);
+}
+.hero-buttons .secondary:hover{
+  background: var(--magenta);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ---------- 7) HERO THEME CARDS (3 cards row) ---------- */
 .hero-cards{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap:18px;
+  gap: 18px;
   margin-top: 8px;
 }
 
+/* Generic card */
 .card{
-  background: rgba(255,255,255,.86);
-  border: 1px solid rgba(229,231,235,.9);
-  border-radius: 16px;
+  background: rgba(255,255,255,.90);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
   padding: 18px 18px 16px;
-  box-shadow: 0 10px 30px rgba(15,23,42,.06);
+  box-shadow: var(--shadow-1);
 }
 
 .card-title{
-  font-weight:800;
-  margin-bottom:8px;
+  font-weight: 900;
+  margin-bottom: 8px;
 }
 
 .card-text{
-  color:var(--muted);
-  line-height:1.5;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
-/* responsive */
-@media (max-width: 900px){
-  .hero h1{ font-size: 42px; }
-  .hero-cards{ grid-template-columns: 1fr; }
-  .hero-buttons{ flex-direction:column; align-items:flex-start; }
-}
+/* ---------- 8) ACTIVE PROJECTS STRIP (3 visible + scroll) ---------- */
 .projects-strip{
-  margin-top: 34px;
+  margin-top: 48px;
 }
 
-.strip-head{
-  display:flex;
-  align-items:baseline;
-  justify-content:space-between;
-  gap:16px;
-  margin-bottom: 12px;
-}
-
-.strip-kicker{
-  font-weight:800;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  font-size:12px;
-  color:var(--muted);
-}
-
-.strip-link{
-  text-decoration:none;
-  font-weight:700;
-  color:var(--blue);
-}
-
-.strip-scroll{
-  display:flex;
-  gap:16px;
-  overflow-x:auto;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-
-.strip-scroll::-webkit-scrollbar{
-  height: 10px;
-}
-.strip-scroll::-webkit-scrollbar-thumb{
-  background: rgba(15,23,42,.12);
-  border-radius: 999px;
-}
-.strip-scroll::-webkit-scrollbar-track{
-  background: rgba(15,23,42,.05);
-  border-radius: 999px;
-}
-
-/* ===============================
-   ACTIVE PROJECTS STRIP
-   Horizontal scroll carousel
-   Shows ~3 cards on desktop
-==================================*/
-
-.projects-strip{
-  margin-top: 48px; /* space above strip */
-}
-
-/* Header row: title + "View all" */
+/* Strip header: "Active Projects" + "View all" */
 .strip-head{
   display:flex;
   align-items:baseline;
@@ -279,84 +240,77 @@ nav a.btn{
   margin-bottom: 18px;
 }
 
-/* Small uppercase label */
 .strip-kicker{
-  font-weight:800;
-  letter-spacing:.08em;
+  font-weight: 900;
+  letter-spacing:.10em;
   text-transform:uppercase;
   font-size:12px;
-  color:var(--muted);
+  color: var(--muted);
 }
 
-/* Link on right side */
 .strip-link{
   text-decoration:none;
-  font-weight:700;
-  color:var(--blue);
+  font-weight: 800;
+  color: var(--blue);
 }
 
-/* Scroll container */
+/* Horizontal scroll container */
 .strip-scroll{
-  display:flex;              /* cards sit horizontally */
-  gap:20px;                  /* space between cards */
-  overflow-x:auto;           /* allow horizontal scroll */
-  padding-bottom: 14px;      /* space for scrollbar */
-  scroll-snap-type: x mandatory; /* snap scrolling */
-  -webkit-overflow-scrolling: touch; /* smoother mobile scroll */
+  display:flex;
+  gap: 20px;
+  overflow-x:auto;
+  padding-bottom: 14px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Custom scrollbar styling */
-.strip-scroll::-webkit-scrollbar{
-  height: 10px;
-}
-
+/* Scrollbar styling (Chrome/Edge) */
+.strip-scroll::-webkit-scrollbar{ height: 10px; }
 .strip-scroll::-webkit-scrollbar-thumb{
   background: rgba(15,23,42,.15);
   border-radius: 999px;
 }
+.strip-scroll::-webkit-scrollbar-track{
+  background: rgba(15,23,42,.05);
+  border-radius: 999px;
+}
 
-/* Project card */
+/* Project card (3 visible on desktop) */
 .pcard{
-  flex: 0 0 32%; /* roughly 3 cards visible in 100% width */
-  min-width: 300px; /* prevents collapsing too small */
+  flex: 0 0 32%;
+  min-width: 300px;
   max-width: 380px;
 
   background: rgba(255,255,255,.92);
-  border: 1px solid rgba(229,231,235,.9);
-  border-radius: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
   padding: 22px;
 
   text-decoration:none;
   color: var(--ink);
 
-  box-shadow: 0 14px 32px rgba(15,23,42,.06);
-
-  scroll-snap-align: start; /* snapping behavior */
+  box-shadow: var(--shadow-1);
+  scroll-snap-align: start;
   position: relative;
   transition: all .2s ease;
 }
-
-/* Hover effect */
 .pcard:hover{
   transform: translateY(-3px);
-  border-color: rgba(37,99,235,.35);
+  border-color: rgba(162,28,175,.35); /* magenta-tinted hover */
 }
 
-/* Project title */
 .ptitle{
-  font-weight:850;
+  font-weight: 900;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
-/* Project description */
 .ptext{
   color: var(--muted);
-  line-height:1.55;
+  line-height: 1.55;
   padding-right: 20px;
 }
 
-/* Arrow indicator */
 .parrow{
   position:absolute;
   right: 18px;
@@ -365,10 +319,20 @@ nav a.btn{
   font-weight: 900;
 }
 
-/* Responsive behavior */
+/* ---------- 9) INNER PAGES (default layout content container)
+   When we style inner pages, we’ll use this.
+   You can keep it now; it won’t break anything.
+------------------------------------------------------------ */
+.page{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 34px 20px;
+}
+
+/* ---------- 10) RESPONSIVE ---------- */
 @media (max-width: 900px){
-  .pcard{
-    flex: 0 0 85%; /* one card per view on mobile */
-    max-width: none;
-  }
+  .hero h1{ font-size: 42px; }
+  .hero-cards{ grid-template-columns: 1fr; }
+  .hero-buttons{ flex-direction:column; align-items:flex-start; }
+  .pcard{ flex: 0 0 85%; max-width: none; }
 }
