@@ -1,12 +1,21 @@
-:root{
-  --ink:#0f172a;
-  --muted:#475569;
-  --bg:#ffffff;
-  --line:#e5e7eb;
+/* =========================================
+   GOOGLE FONT IMPORT
+   Inter = clean, analytical, modern
+========================================= */
 
-  /* accent palette (Design 1 direction) */
-  --blue:#2563eb;
-  --magenta:#a21caf;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+
+/* =========================================
+   COLOR SYSTEM
+========================================= */
+
+:root{
+  --ink: #0f172a;          /* deep navy */
+  --muted: #64748b;        /* slate */
+  --blue: #2563eb;         /* electric blue */
+  --violet: #9333ea;       /* modern violet */
+  --bg-soft: #f8fafc;      /* very light background */
 }
 
 *{ box-sizing:border-box; }
