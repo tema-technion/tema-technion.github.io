@@ -202,18 +202,11 @@ nav a.btn{
   transition: all .25s ease;
 }
 
-/* Primary button — EXACT mockup magenta */
 .hero-buttons .primary{
-  background: #9C3185;            /* exact color from your design */
+  background: #8d2aa8;
   color: #ffffff;
-  box-shadow: 0 14px 28px rgba(156,49,133,.28);
-  border: none;
-}
+  box-shadow: 0 14px 28px rgba(141,42,168,.22);
 
-.hero-buttons .primary:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 18px 34px rgba(156,49,133,.38);
-}
 
 
 /* Secondary CTA = blue outline */
