@@ -202,16 +202,19 @@ nav a.btn{
   transition: all .25s ease;
 }
 
-/* Primary CTA = magenta gradient */
+/* Primary button — EXACT mockup magenta */
 .hero-buttons .primary{
-  background: linear-gradient(135deg, var(--magenta), var(--magenta-2));
-  color: white;
-  box-shadow: 0 12px 26px rgba(162,28,175,.22);
+  background: #9C3185;            /* exact color from your design */
+  color: #ffffff;
+  box-shadow: 0 14px 28px rgba(156,49,133,.28);
+  border: none;
 }
+
 .hero-buttons .primary:hover{
   transform: translateY(-2px);
-  box-shadow: 0 16px 34px rgba(162,28,175,.30);
+  box-shadow: 0 18px 34px rgba(156,49,133,.38);
 }
+
 
 /* Secondary CTA = blue outline */
 .hero-buttons .secondary{
