@@ -1,31 +1,30 @@
 /* ============================================================
-   TEMA LAB — MAIN STYLESHEET (paste entire file)
-   Goal: match Design 1 look (light, high-tech, human)
-   Notes:
-   - Uses Google Font "Inter" for clean modern typography
-   - "Lab" word in logo can be colored via .logo span
-   - Primary/secondary buttons are MAGENTA only (per request)
+   TEMA LAB — STYLE.CSS (Design 1: blue-dominant + magenta accent)
+   Matches the mockup you provided:
+   - Technion logo (blue) at top-left
+   - TEMA (navy) + Lab (blue)
+   - Hero typography: navy headline + slate subtitle
+   - Buttons: Primary magenta gradient, Secondary blue outline
    ============================================================ */
 
-/* ---------- 1) Font import (must be at top) ---------- */
+/* ---------- A) Font (clean, modern, like mockup) ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-/* ---------- 2) Design tokens (colors + sizing) ---------- */
+/* ---------- B) Design tokens (colors / shadows / radius) ---------- */
 :root{
-  /* Core inks */
-  --ink: #0f172a;           /* deep navy text */
-  --muted: #64748b;         /* slate/secondary text */
+  /* Text */
+  --ink: #0f172a;              /* deep navy */
+  --muted: #64748b;            /* slate */
+
+  /* Brand accents */
+  --blue: #2563eb;             /* Technion-ish blue + "Lab" */
+  --blue-2: #1d4ed8;           /* slightly deeper blue for hover */
+  --magenta: #a21caf;          /* magenta accent */
+  --magenta-2: #7e22ce;        /* purple-magenta for gradient depth */
+
+  /* UI */
   --line: rgba(229,231,235,.9);
-
-  /* Brand accents (Design 1 family) */
-  --blue: #2563eb;          /* "Lab" blue + links */
-  --magenta: #a21caf;       /* primary CTA magenta */
-
-  /* Backgrounds */
   --bg: #ffffff;
-  --bg-soft: #f8fafc;
-
-  /* Shadows */
   --shadow-1: 0 10px 30px rgba(15,23,42,.06);
   --shadow-2: 0 14px 34px rgba(15,23,42,.10);
 
@@ -34,14 +33,9 @@
   --r-md: 14px;
 }
 
-/* ---------- 3) Base reset ---------- */
-*{ box-sizing: border-box; }
-
-html, body{
-  margin:0;
-  padding:0;
-}
-
+/* ---------- C) Base reset ---------- */
+*{ box-sizing:border-box; }
+html, body{ margin:0; padding:0; }
 body{
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--ink);
@@ -49,16 +43,19 @@ body{
   line-height: 1.65;
 }
 
-/* Links (default) */
+/* Default links (blue, like mockup) */
 a{ color: var(--blue); }
-a:hover{ opacity: 0.95; }
+a:hover{ opacity: .95; }
 
-/* ---------- 4) NAVBAR ---------- */
-/* Sticky, light translucent bar */
+/* ============================================================
+   NAVBAR (sticky, light, clean)
+   ============================================================ */
 .navbar{
   position: sticky;
   top: 0;
   z-index: 20;
+
+  /* light translucent bar */
   background: rgba(255,255,255,.86);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(229,231,235,.75);
@@ -68,30 +65,52 @@ a:hover{ opacity: 0.95; }
   max-width: 1200px;
   margin: 0 auto;
   padding: 14px 20px;
+
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap: 16px;
+  gap: 18px;
 }
 
-/* Logo as a link to home */
+/* Left brand group (Technion logo + wordmark) */
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  text-decoration:none;
+}
+
+/* Technion logo image (blue) */
+.brand img{
+  height: 34px;        /* tweak if needed */
+  width: auto;
+  display:block;
+}
+
+/* Wordmark: TEMA (navy) + Lab (blue) */
 .logo{
+  display:flex;
+  align-items:baseline;
+  gap: 6px;
+  text-decoration:none;
+  line-height: 1;
+}
+
+.logo .tema{
   font-weight: 900;
   letter-spacing: -0.01em;
-  text-decoration: none;
   color: var(--ink);
-  display:flex;
-  align-items: baseline;
-  gap: 6px;
+  font-size: 18px;
 }
 
-/* Optional: if you wrap "Lab" in <span> we color it blue */
-.logo span{
-  color: var(--blue);
+.logo .lab{
   font-weight: 900;
+  letter-spacing: -0.01em;
+  color: var(--blue);
+  font-size: 18px;
 }
 
-/* Nav links */
+/* Nav links (Research / Projects / Team) */
 nav a{
   text-decoration:none;
   color: var(--ink);
@@ -101,28 +120,31 @@ nav a{
 }
 nav a:hover{ opacity: 1; }
 
-/* Top-right "Join Us" button in navbar (magenta only) */
+/* "Join Us" top-right button (magenta, like mockup) */
 nav a.btn{
   padding: 10px 14px;
   border-radius: 12px;
-  background: var(--magenta);
+
+  background: linear-gradient(135deg, var(--magenta), var(--magenta-2));
   color: white;
+
   box-shadow: 0 10px 20px rgba(162,28,175,.18);
 }
 
-/* ---------- 5) HOME HERO (full width wrapper) ---------- */
+/* ============================================================
+   HERO (light blue+magenta haze, airy)
+   ============================================================ */
 .hero{
   min-height: 72vh;
   display:flex;
   align-items:center;
+  padding: 64px 20px;
 
-  /* Light tech feel, not gloomy */
+  /* soft haze similar to mockup */
   background:
     radial-gradient(1200px 600px at 20% 20%, rgba(162,28,175,.10), transparent 55%),
-    radial-gradient(1000px 500px at 80% 30%, rgba(37,99,235,.10), transparent 55%),
+    radial-gradient(1000px 500px at 80% 30%, rgba(37,99,235,.12), transparent 55%),
     linear-gradient(180deg,#ffffff,#f8fafc);
-
-  padding: 56px 20px;
 }
 
 .hero-content{
@@ -130,7 +152,7 @@ nav a.btn{
   margin: 0 auto;
 }
 
-/* Small uppercase line above hero title */
+/* Optional kicker line (if you keep it) */
 .kicker{
   display:inline-block;
   font-weight: 800;
@@ -141,16 +163,17 @@ nav a.btn{
   margin-bottom: 14px;
 }
 
-/* Hero title */
+/* Hero H1 (deep navy, bold) */
 .hero h1{
   font-size: 56px;
   line-height: 1.05;
   letter-spacing: -0.02em;
   font-weight: 900;
   margin: 14px 0 14px;
+  color: var(--ink);
 }
 
-/* Hero subtitle */
+/* Hero subtitle (slate) */
 .hero h3{
   font-size: 20px;
   font-weight: 500;
@@ -158,14 +181,17 @@ nav a.btn{
   margin: 0 0 28px;
 }
 
-/* ---------- 6) HERO BUTTONS (MAGENTA ONLY) ---------- */
+/* ============================================================
+   HERO BUTTONS (match mockup)
+   - Primary: magenta gradient filled
+   - Secondary: blue outline
+   ============================================================ */
 .hero-buttons{
   display:flex;
   gap: 16px;
   margin: 10px 0 34px;
 }
 
-/* Both buttons share base styling */
 .hero-buttons a{
   display:inline-block;
   padding: 14px 26px;
@@ -176,9 +202,9 @@ nav a.btn{
   transition: all .25s ease;
 }
 
-/* Primary = solid magenta */
+/* Primary CTA = magenta gradient */
 .hero-buttons .primary{
-  background: var(--magenta);
+  background: linear-gradient(135deg, var(--magenta), var(--magenta-2));
   color: white;
   box-shadow: 0 12px 26px rgba(162,28,175,.22);
 }
@@ -187,19 +213,21 @@ nav a.btn{
   box-shadow: 0 16px 34px rgba(162,28,175,.30);
 }
 
-/* Secondary = outlined magenta */
+/* Secondary CTA = blue outline */
 .hero-buttons .secondary{
-  background: rgba(255,255,255,.90);
-  border: 2px solid var(--magenta);
-  color: var(--magenta);
+  background: rgba(255,255,255,.92);
+  border: 2px solid var(--blue);
+  color: var(--blue);
 }
 .hero-buttons .secondary:hover{
-  background: var(--magenta);
+  background: var(--blue);
   color: white;
   transform: translateY(-2px);
 }
 
-/* ---------- 7) HERO THEME CARDS (3 cards row) ---------- */
+/* ============================================================
+   HERO THEME CARDS (3 cards row)
+   ============================================================ */
 .hero-cards{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -207,7 +235,6 @@ nav a.btn{
   margin-top: 8px;
 }
 
-/* Generic card */
 .card{
   background: rgba(255,255,255,.90);
   border: 1px solid var(--line);
@@ -226,12 +253,11 @@ nav a.btn{
   line-height: 1.5;
 }
 
-/* ---------- 8) ACTIVE PROJECTS STRIP (3 visible + scroll) ---------- */
-.projects-strip{
-  margin-top: 48px;
-}
+/* ============================================================
+   ACTIVE PROJECTS STRIP (3 visible + horizontal scroll)
+   ============================================================ */
+.projects-strip{ margin-top: 48px; }
 
-/* Strip header: "Active Projects" + "View all" */
 .strip-head{
   display:flex;
   align-items:baseline;
@@ -254,7 +280,6 @@ nav a.btn{
   color: var(--blue);
 }
 
-/* Horizontal scroll container */
 .strip-scroll{
   display:flex;
   gap: 20px;
@@ -264,7 +289,6 @@ nav a.btn{
   -webkit-overflow-scrolling: touch;
 }
 
-/* Scrollbar styling (Chrome/Edge) */
 .strip-scroll::-webkit-scrollbar{ height: 10px; }
 .strip-scroll::-webkit-scrollbar-thumb{
   background: rgba(15,23,42,.15);
@@ -275,7 +299,6 @@ nav a.btn{
   border-radius: 999px;
 }
 
-/* Project card (3 visible on desktop) */
 .pcard{
   flex: 0 0 32%;
   min-width: 300px;
@@ -296,7 +319,7 @@ nav a.btn{
 }
 .pcard:hover{
   transform: translateY(-3px);
-  border-color: rgba(162,28,175,.35); /* magenta-tinted hover */
+  border-color: rgba(37,99,235,.30);
 }
 
 .ptitle{
@@ -311,6 +334,7 @@ nav a.btn{
   padding-right: 20px;
 }
 
+/* Arrow in blue like mockup */
 .parrow{
   position:absolute;
   right: 18px;
@@ -319,20 +343,13 @@ nav a.btn{
   font-weight: 900;
 }
 
-/* ---------- 9) INNER PAGES (default layout content container)
-   When we style inner pages, we’ll use this.
-   You can keep it now; it won’t break anything.
------------------------------------------------------------- */
-.page{
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 34px 20px;
-}
-
-/* ---------- 10) RESPONSIVE ---------- */
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
 @media (max-width: 900px){
   .hero h1{ font-size: 42px; }
   .hero-cards{ grid-template-columns: 1fr; }
   .hero-buttons{ flex-direction:column; align-items:flex-start; }
   .pcard{ flex: 0 0 85%; max-width: none; }
+  nav a{ margin-left: 12px; }
 }
