@@ -168,3 +168,98 @@ nav a.btn{
   .hero-cards{ grid-template-columns: 1fr; }
   .hero-buttons{ flex-direction:column; align-items:flex-start; }
 }
+.projects-strip{
+  margin-top: 34px;
+}
+
+.strip-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom: 12px;
+}
+
+.strip-kicker{
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-size:12px;
+  color:var(--muted);
+}
+
+.strip-link{
+  text-decoration:none;
+  font-weight:700;
+  color:var(--blue);
+}
+
+.strip-scroll{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.strip-scroll::-webkit-scrollbar{
+  height: 10px;
+}
+.strip-scroll::-webkit-scrollbar-thumb{
+  background: rgba(15,23,42,.12);
+  border-radius: 999px;
+}
+.strip-scroll::-webkit-scrollbar-track{
+  background: rgba(15,23,42,.05);
+  border-radius: 999px;
+}
+
+/* Card: make 3 visible on desktop */
+.pcard{
+  flex: 0 0 calc((1200px - 40px - 32px) / 3); /* approx 3 cards within 1200 container */
+  max-width: 360px;
+  min-width: 280px;
+
+  background: rgba(255,255,255,.86);
+  border: 1px solid rgba(229,231,235,.9);
+  border-radius: 16px;
+  padding: 18px;
+  text-decoration:none;
+  color: var(--ink);
+
+  box-shadow: 0 10px 30px rgba(15,23,42,.06);
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.pcard:hover{
+  border-color: rgba(37,99,235,.35);
+}
+
+.ptitle{
+  font-weight:850;
+  margin-bottom: 8px;
+}
+
+.ptext{
+  color: var(--muted);
+  line-height:1.5;
+  padding-right: 18px;
+}
+
+.parrow{
+  position:absolute;
+  right: 16px;
+  bottom: 14px;
+  color: var(--blue);
+  font-weight: 900;
+}
+
+/* On smaller screens, show ~1.1–1.3 cards and let swipe do the work */
+@media (max-width: 900px){
+  .pcard{
+    flex: 0 0 82%;
+    max-width: none;
+  }
+}
