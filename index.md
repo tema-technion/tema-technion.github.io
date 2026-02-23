@@ -7,10 +7,28 @@ title: TEMA Lab
 ## Decision systems for smart mobility
 ### Modelling human choice within  complex mobility networks
 
-<div class="hero-buttons">
-  <a class="primary" href="/research/">Explore Research</a>
-  <a class="secondary" href="/projects/">View Projects</a>
-</div>
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="hero-brand">
+      <span class="tema">TEMA</span> <span class="lab">Lab</span>
+    </div>
+
+    <h2>Decision Systems for Smart Mobility</h2>
+
+    <p class="lead">
+      Modeling human choice within <em>complex mobility networks</em>.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="primary" href="/research/">Explore Our Research</a>
+      <a class="secondary" href="/projects/">View Projects</a>
+    </div>
+
+    <!-- keep your cards + strip below -->
+    
+  </div>
+</section>
 
 <div class="hero-cards">
   <div class="card">
