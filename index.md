@@ -3,10 +3,6 @@ layout: home
 title: TEMA Lab
 ---
 
-# TEMA Lab
-## Decision systems for smart mobility
-### Modelling human choice within  complex mobility networks
-
 <section class="hero">
   <div class="hero-content">
 
