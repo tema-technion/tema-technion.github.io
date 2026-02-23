@@ -3,9 +3,9 @@ layout: home
 title: TEMA Lab
 ---
 
-# Transport Experience & Mobility Analytics
+# TEMA Lab
 
-### Modeling human choice within <em>complex mobility networks</em>.
+### Transport experiences & Mobility Analytics.
 
 <div class="hero-buttons">
   <a class="primary" href="/research/">Explore Research</a>
