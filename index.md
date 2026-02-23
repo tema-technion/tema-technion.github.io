@@ -3,68 +3,59 @@ layout: home
 title: TEMA Lab
 ---
 
-<!-- =========================================================
-     HOME / LANDING PAGE CONTENT
-     This is the ONLY hero on the page.
-     (Layout does not add a hero wrapper anymore.)
-     ========================================================= -->
-
+<!-- ======================================================
+     HERO (only appears once now)
+     ====================================================== -->
 <section class="hero">
-  <div class="hero-content">
+  <div class="hero-inner">
 
-    <!-- BIG wordmark like the mockup -->
-    <div class="hero-brand" aria-label="TEMA Lab">
-      <span class="tema">TEMA</span><span class="lab">Lab</span>
-    </div>
+    <!-- Wordmark in hero -->
+    <h1 class="hero-title">
+      <span class="hero-tema">TEMA</span><span class="hero-lab">Lab</span>
+    </h1>
 
-    <!-- 2nd line (mockup) -->
-    <h2>Decision Systems for Smart Mobility</h2>
+    <h2 class="hero-subtitle">Decision Systems for Smart Mobility</h2>
 
-    <!-- 3rd line (mockup) -->
-    <p class="lead">
+    <p class="hero-lead">
       Modeling human choice within <em>complex mobility networks</em>.
     </p>
 
-    <!-- CTA buttons (primary is magenta #9C3185) -->
-    <div class="hero-buttons">
-      <a class="primary" href="/research/">Explore Our Research</a>
-      <a class="secondary" href="/projects/">View Projects</a>
+    <!-- Primary + Secondary buttons -->
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/research/">Explore Our Research</a>
+      <a class="btn btn-secondary" href="/projects/">View Projects</a>
     </div>
 
-    <!-- =====================================================
-         3 THEME CARDS (under hero)
-         ===================================================== -->
-    <div class="hero-cards">
-      <div class="card">
-        <div class="card-title">Behavioral Modeling</div>
-        <div class="card-text">Perception, memory, and bounded rationality in travel decisions.</div>
+    <!-- ======================================================
+         3 PILLAR CARDS
+         ====================================================== -->
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-title">Behavioral Modeling</div>
+        <div class="pillar-text">Perception, memory, and bounded rationality in travel decisions.</div>
       </div>
 
-      <div class="card">
-        <div class="card-title">Network Analytics</div>
-        <div class="card-text">Patterns, connectivity, and system performance across modes.</div>
+      <div class="pillar">
+        <div class="pillar-title">Network Analytics</div>
+        <div class="pillar-text">Patterns, connectivity, and system performance across modes.</div>
       </div>
 
-      <div class="card">
-        <div class="card-title">Policy Simulation</div>
-        <div class="card-text">Testing incentives, design alternatives, and distributional impacts.</div>
+      <div class="pillar">
+        <div class="pillar-title">Policy Simulation</div>
+        <div class="pillar-text">Testing incentives, design alternatives, and distributional impacts.</div>
       </div>
     </div>
 
-    <!-- =====================================================
-         ACTIVE PROJECTS STRIP
-         Requirement:
-         - You have 5 projects total
-         - Show ~3 cards in view on desktop
-         - Allow horizontal scrolling (mouse/trackpad)
-         ===================================================== -->
-    <section class="projects-strip">
+    <!-- ======================================================
+         ACTIVE PROJECTS STRIP (scrollable; 3 visible on desktop)
+         ====================================================== -->
+    <section class="strip">
       <div class="strip-head">
-        <span class="strip-kicker">Active Projects</span>
+        <span class="strip-kicker">ACTIVE PROJECTS</span>
         <a class="strip-link" href="/projects/">View all →</a>
       </div>
 
-      <div class="strip-scroll" aria-label="Active projects (scroll horizontally)">
+      <div class="strip-scroll" aria-label="Active projects (horizontal scroll)">
         <a class="pcard" href="/projects/#adas">
           <div class="ptitle">ADAS Adoption Modeling</div>
           <div class="ptext">Tax incentives, uptake dynamics, and distributional effects.</div>
