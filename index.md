@@ -26,3 +26,43 @@ title: TEMA Lab
     <div class="card-text">Testing incentives, design alternatives, and distributional impacts.</div>
   </div>
 </div>
+
+<section class="projects-strip">
+  <div class="strip-head">
+    <span class="strip-kicker">Active Projects</span>
+    <a class="strip-link" href="/projects/">View all →</a>
+  </div>
+
+  <div class="strip-scroll" aria-label="Active projects (scroll horizontally)">
+    <a class="pcard" href="/projects/#adas">
+      <div class="ptitle">ADAS Adoption Modeling</div>
+      <div class="ptext">Tax incentives, uptake dynamics, and distributional effects.</div>
+      <div class="parrow">→</div>
+    </a>
+
+    <a class="pcard" href="/projects/#transfer">
+      <div class="ptitle">Transfer Penalty Estimation</div>
+      <div class="ptext">Quantifying transfer costs and designing better interchanges.</div>
+      <div class="parrow">→</div>
+    </a>
+
+    <a class="pcard" href="/projects/#memory">
+      <div class="ptitle">Collective Memory in Route Choice</div>
+      <div class="ptext">How experience and cues shape route decisions over time.</div>
+      <div class="parrow">→</div>
+    </a>
+
+    <a class="pcard" href="/projects/#ai">
+      <div class="ptitle">Human–AI Decision Support</div>
+      <div class="ptext">Co-decision loops for mobility operations and planning.</div>
+      <div class="parrow">→</div>
+    </a>
+
+    <a class="pcard" href="/projects/#sensing">
+      <div class="ptitle">People-as-Sensors Mobility Insights</div>
+      <div class="ptext">Smartphone/wearable signals for experience & service quality.</div>
+      <div class="parrow">→</div>
+    </a>
+  </div>
+</section>
+
