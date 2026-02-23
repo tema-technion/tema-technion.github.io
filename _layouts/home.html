@@ -1,38 +1,67 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- =========================================================
+       TEMA LAB — Base layout for ALL pages
+       Key idea:
+       - The layout provides the navbar + loads CSS
+       - Each page (index/research/projects/…) provides its own sections
+       - We do NOT wrap {{ content }} inside .hero here (prevents duplication)
+       ========================================================= -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>{{ page.title }} | {{ site.title }}</title>
+
+  <!-- Main site stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
 
+  <!-- =========================================================
+       NAVBAR
+       - Left: Technion logo + TEMA Lab wordmark
+       - Right: navigation links + Join Us button
+       ========================================================= -->
   <header class="navbar">
     <div class="nav-container">
- <a class="brand" href="/">
-  <img src="/assets/img/technion-logo.png" alt="Technion logo">
-  <div class="logo">
-    <span class="tema">TEMA</span>
-    <span class="lab">Lab</span>
-  </div>
-</a>
-      <nav>
-        <a href="/research/">Research</a>
-        <a href="/projects/">Projects</a>
-        <a href="/team/">Team</a>
-        <a class="btn" href="/join/">Join Us</a>
+
+      <!-- Brand (click returns to homepage) -->
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <!-- NOTE:
+             Put the Technion logo file here:
+             /assets/img/technion-logo.png
+        -->
+        <img src="{{ '/assets/img/technion-logo.png' | relative_url }}" alt="Technion logo">
+
+        <!-- Wordmark in navbar (smaller than hero wordmark) -->
+        <div class="logo">
+          <span class="tema">TEMA</span>
+          <span class="lab">Lab</span>
+        </div>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav-links">
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a href="{{ '/team/' | relative_url }}">Team</a>
+        <a class="btn" href="{{ '/join/' | relative_url }}">Join Us</a>
       </nav>
+
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
-      {{ content }}
-    </div>
-  </section>
+  <!-- =========================================================
+       PAGE CONTENT
+       Each page is responsible for its own structure:
+       - index.md will define the hero/cards/strip
+       - research.md etc will define their content sections
+       ========================================================= -->
+  <main>
+    {{ content }}
+  </main>
 
 </body>
 </html>
