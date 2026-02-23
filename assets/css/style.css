@@ -1,417 +1,333 @@
-/* ============================================================
-   TEMA LAB — style.css (Design 1 — EXACT palette from your mockup)
-   ------------------------------------------------------------
-   Goal: match your reference image (not "similar vibe").
-   Key colors you provided:
-   - #25374E (deep navy for main wordmark + headline ink)
-   - #3C506E (slate for secondary headings)
-   - #566D8A (muted slate for lead text)
-   - #1288C4 (cyan for "Lab" in hero + accents)
-   - #214DC7 (blue for secondary button outline)
-   - #9C3185 (magenta for primary button)
-   ============================================================ */
+/* =========================================================
+   TEMA Lab — Main Stylesheet
+   Goal: match the reference look exactly (clean, airy, high-tech)
+   ========================================================= */
 
-/* ---------------------------
-   1) Fonts
-   - Inter = clean body + headings
-   - Montserrat = optional for wordmark weight/geometry
-   NOTE: If you prefer not to load Montserrat, remove it and Inter still works.
-   --------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap');
+/* -----------------------------
+   0) Fonts (safe + modern)
+   ----------------------------- */
+/* If you prefer NOT to use Google Fonts, delete this import;
+   the design will still work with system fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-/* ---------------------------
-   2) Design tokens
-   --------------------------- */
+/* -----------------------------
+   1) Design tokens (colors)
+   ----------------------------- */
 :root{
-  /* Text palette (from your mockup) */
-  --ink: #25374E;
-  --ink-2: #3C506E;
-  --muted: #566D8A;
+  /* Text & UI */
+  --ink-900: #25374E;   /* deep navy (headings) */
+  --ink-700: #3C506E;   /* dark slate (subheadings) */
+  --ink-600: #566D8A;   /* body text */
+  --blue-cta: #214DC7;  /* secondary button border/text */
+  --blue-lab: #1288C4;  /* Lab accent */
+  --magenta: #9C3185;   /* primary button */
 
-  /* Accent palette (from your mockup) */
-  --lab-cyan: #1288C4;
-  --outline-blue: #214DC7;
-  --primary-magenta: #9C3185;
-
-  /* UI neutrals */
+  /* Surfaces */
   --bg: #ffffff;
-  --panel: rgba(255,255,255,.92);
-  --line: rgba(229,231,235,.85);
+  --panel: #f7f9fc;     /* page bottom soft */
+  --card: #ffffff;
+  --stroke: rgba(37,55,78,0.10);
 
-  /* Shadows / radius */
-  --shadow-1: 0 10px 28px rgba(37,55,78,.08);
-  --shadow-2: 0 16px 40px rgba(37,55,78,.10);
-  --r-lg: 18px;
-  --r-md: 14px;
+  /* Effects */
+  --shadow: 0 10px 30px rgba(37,55,78,0.10);
+  --radius-lg: 18px;
+  --radius-md: 14px;
 }
 
-/* ---------------------------
-   3) Base reset + defaults
-   --------------------------- */
+/* -----------------------------
+   2) Base
+   ----------------------------- */
 *{ box-sizing: border-box; }
-html, body{ margin: 0; padding: 0; }
-
+html, body{ margin:0; padding:0; }
 body{
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--ink);
+  color: var(--ink-600);
   background: var(--bg);
-  line-height: 1.65;
 }
 
-/* Links */
-a{ color: var(--outline-blue); }
-a:hover{ opacity: .95; }
+/* links default */
+a{ color: inherit; text-decoration: none; }
+a:hover{ text-decoration: none; }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
+/* -----------------------------
+   3) Navbar
+   ----------------------------- */
 .navbar{
   position: sticky;
   top: 0;
-  z-index: 20;
-
-  background: rgba(255,255,255,.88);
+  z-index: 10;
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(229,231,235,.75);
+  border-bottom: 1px solid rgba(37,55,78,0.06);
 }
 
 .nav-container{
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 14px 20px;
-
-  display: flex;
-  align-items: center;
+  padding: 14px 18px;
+  display:flex;
+  align-items:center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 16px;
 }
 
-/* Brand: Technion logo + wordmark */
+/* Brand cluster (Technion logo + TEMA Lab) */
 .brand{
-  display: flex;
-  align-items: center;
+  display:flex;
+  align-items:center;
   gap: 12px;
-  text-decoration: none;
 }
 
-.brand img{
-  height: 34px;
-  width: auto;
-  display: block;
+.brand-mark{
+  width: 38px;
+  height: auto;
+  display:block;
 }
 
-/* Small wordmark in navbar */
-.logo{
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
+.brand-wordmark{
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: 18px;
   line-height: 1;
 }
 
-.logo .tema{
-  font-weight: 900;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-  font-size: 18px;
-}
+.brand-tema{ color: var(--ink-900); }
+.brand-lab{ color: var(--blue-lab); }
 
-.logo .lab{
-  font-weight: 900;
-  letter-spacing: -0.01em;
-  color: var(--outline-blue); /* navbar "Lab" can be deeper blue */
-  font-size: 18px;
-}
-
-/* Right-side links */
-.nav-links a{
-  text-decoration: none;
-  color: var(--ink);
+/* Nav links */
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap: 22px;
   font-weight: 600;
-  margin-left: 18px;
-  opacity: .92;
+  color: var(--ink-700);
 }
-.nav-links a:hover{ opacity: 1; }
 
-/* Join Us pill — keep it MAGENTA only */
-.nav-links a.btn{
-  padding: 10px 14px;
+.nav-links a{
+  padding: 8px 2px;
+}
+
+.nav-cta{
+  padding: 10px 16px !important;
   border-radius: 12px;
-
-  background: var(--primary-magenta);
-  color: #fff;
-
-  box-shadow: 0 10px 20px rgba(156,49,133,.18);
+  background: var(--magenta);
+  color: #fff !important;
+  box-shadow: 0 8px 18px rgba(156,49,133,0.22);
 }
 
-/* ============================================================
-   HERO (left aligned like the mockup)
-   ============================================================ */
-.hero{
-  /* airy top spacing under navbar */
-  padding: 96px 20px 70px;
-
-  /* light haze similar to your mockup background */
-  background:
-    radial-gradient(1150px 520px at 18% 22%, rgba(156,49,133,.10), transparent 58%),
-    radial-gradient(1050px 520px at 78% 30%, rgba(18,136,196,.14), transparent 60%),
-    linear-gradient(180deg, #ffffff, #f7f9fc);
-}
-
-.hero-content{
-  max-width: 1200px;
+/* -----------------------------
+   4) Page container
+   ----------------------------- */
+.page{
+  max-width: 1100px;
   margin: 0 auto;
-  text-align: left;
+  padding: 34px 18px 60px;
 }
 
-/* Big wordmark inside hero */
-.hero-brand{
-  margin: 0 0 16px;
-  line-height: 1.0;
+/* -----------------------------
+   5) Hero block
+   ----------------------------- */
+/* Soft radial tint background like the reference */
+.hero{
+  background:
+    radial-gradient(900px 420px at 12% 20%, rgba(156,49,133,0.14) 0%, rgba(156,49,133,0.00) 60%),
+    radial-gradient(900px 420px at 78% 18%, rgba(18,136,196,0.14) 0%, rgba(18,136,196,0.00) 60%);
+  border-radius: 22px;
+  padding: 60px 0 44px;
 }
 
-/* TEMA — deep navy */
-.hero-brand .tema{
-  font-family: Montserrat, Inter, system-ui, sans-serif;
+.hero-inner{
+  padding: 0 6px;
+}
+
+/* TEMA Lab wordmark */
+.hero-title{
+  margin: 0 0 10px;
+  font-size: 56px;
   font-weight: 900;
-  letter-spacing: -0.03em;
-  color: var(--ink);
-  font-size: 86px;
+  letter-spacing: -0.04em;
+  color: var(--ink-900);
 }
 
-/* Lab — cyan (exact mockup cue) */
-.hero-brand .lab{
-  font-family: Montserrat, Inter, system-ui, sans-serif;
-  font-weight: 900;
-  letter-spacing: -0.03em;
-  color: var(--lab-cyan);
-  font-size: 86px;
-  margin-left: 8px;
-}
+.hero-tema{ color: var(--ink-900); }
+.hero-lab{ color: var(--blue-lab); }
 
-/* Second line */
-.hero h2{
-  font-family: Inter, system-ui, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: var(--ink-2);
-  margin: 0 0 14px;
-  font-size: 38px;
-}
-
-/* Third line */
-.hero p.lead{
+/* Subtitle */
+.hero-subtitle{
+  margin: 0 0 12px;
   font-size: 22px;
-  font-weight: 500;
-  color: var(--muted);
-  margin: 0 0 26px;
+  font-weight: 800;
+  color: var(--ink-700);
 }
 
-.hero p.lead em{
+/* Lead sentence */
+.hero-lead{
+  margin: 0 0 18px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-600);
+}
+.hero-lead em{
   font-style: italic;
-  color: var(--ink-2);
 }
 
-/* ============================================================
-   HERO BUTTONS (exact colors)
-   ============================================================ */
-.hero-buttons{
-  display: flex;
-  gap: 18px;
-  margin: 0 0 40px;
+/* Buttons row */
+.hero-actions{
+  display:flex;
+  gap: 12px;
+  align-items:center;
+  margin: 14px 0 26px;
 }
 
-.hero-buttons a{
-  display: inline-block;
-  padding: 14px 30px;
-  border-radius: 12px;
-  text-decoration: none;
+/* Button base */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 10px;
   font-weight: 700;
-  font-size: 16px;
-  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  border: 2px solid transparent;
 }
 
-/* Primary — exact magenta fill */
-.hero-buttons .primary{
-  background: var(--primary-magenta); /* #9C3185 */
-  color: #ffffff;
-  border: none;
-  box-shadow: 0 14px 28px rgba(156,49,133,.28);
-}
-.hero-buttons .primary:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 18px 34px rgba(156,49,133,.38);
+/* Primary (magenta) */
+.btn-primary{
+  background: var(--magenta);
+  color: #fff;
+  box-shadow: 0 10px 18px rgba(156,49,133,0.22);
 }
 
-/* Secondary — exact blue outline */
-.hero-buttons .secondary{
-  background: rgba(255,255,255,.90);
-  border: 2px solid var(--outline-blue); /* #214DC7 */
-  color: var(--outline-blue);
-}
-.hero-buttons .secondary:hover{
-  background: var(--outline-blue);
-  color: #ffffff;
-  transform: translateY(-2px);
+/* Secondary (blue outline) */
+.btn-secondary{
+  background: transparent;
+  border-color: var(--blue-cta);
+  color: var(--blue-cta);
 }
 
-/* ============================================================
-   3 CARDS UNDER HERO
-   ============================================================ */
-.hero-cards{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 8px;
+/* -----------------------------
+   6) Pillar cards row (3 cards)
+   ----------------------------- */
+.pillars{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 6px;
 }
 
-.card{
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: var(--r-lg);
-  padding: 18px 18px 16px;
-  box-shadow: var(--shadow-1);
+.pillar{
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  box-shadow: 0 10px 25px rgba(37,55,78,0.08);
 }
 
-.card-title{
-  font-weight: 900;
+.pillar-title{
+  font-weight: 800;
+  color: var(--ink-900);
+  font-size: 14px;
   margin-bottom: 8px;
-  color: var(--ink);
 }
 
-.card-text{
-  color: var(--muted);
+.pillar-text{
+  font-size: 12px;
   line-height: 1.5;
+  color: var(--ink-600);
 }
 
-/* ============================================================
-   ACTIVE PROJECTS STRIP
-   - show ~3 cards in view
-   - allow horizontal scrolling
-   ============================================================ */
-.projects-strip{
-  margin-top: 48px;
+/* -----------------------------
+   7) Active projects strip
+   ----------------------------- */
+.strip{
+  margin-top: 28px;
 }
 
 .strip-head{
-  display: flex;
-  align-items: baseline;
+  display:flex;
+  align-items:center;
   justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .strip-kicker{
-  font-weight: 900;
-  letter-spacing: .10em;
-  text-transform: uppercase;
   font-size: 12px;
-  color: var(--muted);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-700);
 }
 
 .strip-link{
-  text-decoration: none;
-  font-weight: 800;
-  color: var(--outline-blue);
+  font-weight: 700;
+  color: var(--blue-cta);
 }
 
-/* Horizontal scroll container */
+/* Scroll container:
+   - shows ~3 cards on desktop
+   - horizontal scroll for extra cards */
 .strip-scroll{
-  display: flex;
-  gap: 20px;
+  display:flex;
+  gap: 16px;
   overflow-x: auto;
-  padding-bottom: 14px;
-
+  padding-bottom: 12px;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
-/* scrollbar (optional, subtle) */
+/* make scrollbar subtle */
 .strip-scroll::-webkit-scrollbar{ height: 10px; }
-.strip-scroll::-webkit-scrollbar-thumb{
-  background: rgba(37,55,78,.18);
-  border-radius: 999px;
-}
-.strip-scroll::-webkit-scrollbar-track{
-  background: rgba(37,55,78,.06);
-  border-radius: 999px;
-}
+.strip-scroll::-webkit-scrollbar-track{ background: rgba(37,55,78,0.08); border-radius: 999px; }
+.strip-scroll::-webkit-scrollbar-thumb{ background: rgba(37,55,78,0.20); border-radius: 999px; }
 
-/* Project cards: 32% = roughly 3 visible on desktop */
+/* Project card width:
+   - fixed width lets you reliably see 3 cards at a time on desktop */
 .pcard{
-  flex: 0 0 32%;
-  min-width: 300px;
-  max-width: 380px;
-
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: var(--r-lg);
-  padding: 22px;
-
-  text-decoration: none;
-  color: var(--ink);
-
-  box-shadow: var(--shadow-1);
+  flex: 0 0 320px; /* 3 cards + gaps fits ~1100px container */
   scroll-snap-align: start;
+  background: var(--card);
+  border: 1px solid rgba(37,55,78,0.10);
+  border-radius: var(--radius-lg);
+  padding: 18px 18px 16px;
+  box-shadow: 0 10px 25px rgba(37,55,78,0.08);
   position: relative;
-
-  transition: transform .18s ease, border-color .18s ease;
-}
-
-.pcard:hover{
-  transform: translateY(-3px);
-  border-color: rgba(18,136,196,.35);
 }
 
 .ptitle{
+  font-size: 16px;
   font-weight: 900;
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: var(--ink);
+  color: var(--ink-900);
+  margin-bottom: 8px;
 }
 
 .ptext{
-  color: var(--muted);
-  line-height: 1.55;
-  padding-right: 22px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--ink-600);
+  max-width: 36ch;
 }
 
-/* Arrow */
 .parrow{
-  position: absolute;
-  right: 18px;
-  bottom: 16px;
-  color: var(--outline-blue);
+  position:absolute;
+  right: 14px;
+  bottom: 12px;
   font-weight: 900;
+  color: var(--blue-cta);
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-@media (max-width: 900px){
-  .hero{ padding-top: 86px; }
+/* -----------------------------
+   8) Responsive tweaks
+   ----------------------------- */
+@media (max-width: 980px){
+  .hero-title{ font-size: 44px; }
+  .pillars{ grid-template-columns: 1fr; }
+  .pcard{ flex-basis: 280px; }
+}
 
-  .hero-brand .tema,
-  .hero-brand .lab{
-    font-size: 54px;
-  }
-
-  .hero h2{ font-size: 26px; }
-  .hero p.lead{ font-size: 18px; }
-
-  .hero-buttons{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero-cards{
-    grid-template-columns: 1fr;
-  }
-
-  /* on mobile, each project card is wider */
-  .pcard{
-    flex: 0 0 85%;
-    max-width: none;
-  }
-
-  .nav-links a{ margin-left: 12px; }
+@media (max-width: 520px){
+  .nav-links{ gap: 14px; font-size: 14px; }
+  .hero{ padding: 44px 0 34px; }
+  .hero-actions{ flex-direction: column; align-items: flex-start; }
+  .btn{ width: 100%; justify-content: center; }
 }
