@@ -1,6 +1,6 @@
 ---
 layout: home
-title: TEMA Lab
+title: Home
 ---
 
 <section class="hero">
@@ -20,11 +20,6 @@ title: TEMA Lab
       <a class="primary" href="/research/">Explore Our Research</a>
       <a class="secondary" href="/projects/">View Projects</a>
     </div>
-
-    <!-- keep your cards + strip below -->
-    
-  </div>
-</section>
 
 <div class="hero-cards">
   <div class="card">
