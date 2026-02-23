@@ -4,8 +4,8 @@ title: TEMA Lab
 ---
 
 # TEMA Lab
-
-### Transport experiences & Mobility Analytics.
+## Decision systems for smart mobility
+### Modelling human choice within  complex mobility networks
 
 <div class="hero-buttons">
   <a class="primary" href="/research/">Explore Research</a>
