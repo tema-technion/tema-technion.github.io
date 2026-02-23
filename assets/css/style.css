@@ -1,62 +1,76 @@
 /* ============================================================
-   TEMA LAB — STYLE.CSS (Design 1: blue-dominant + magenta accent)
-   Matches the mockup you provided:
-   - Technion logo (blue) at top-left
-   - TEMA (navy) + Lab (blue)
-   - Hero typography: navy headline + slate subtitle
-   - Buttons: Primary magenta gradient, Secondary blue outline
+   TEMA LAB — style.css (Design 1 — EXACT palette from your mockup)
+   ------------------------------------------------------------
+   Goal: match your reference image (not "similar vibe").
+   Key colors you provided:
+   - #25374E (deep navy for main wordmark + headline ink)
+   - #3C506E (slate for secondary headings)
+   - #566D8A (muted slate for lead text)
+   - #1288C4 (cyan for "Lab" in hero + accents)
+   - #214DC7 (blue for secondary button outline)
+   - #9C3185 (magenta for primary button)
    ============================================================ */
 
-/* ---------- A) Font (clean, modern, like mockup) ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+/* ---------------------------
+   1) Fonts
+   - Inter = clean body + headings
+   - Montserrat = optional for wordmark weight/geometry
+   NOTE: If you prefer not to load Montserrat, remove it and Inter still works.
+   --------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap');
 
-/* ---------- B) Design tokens (colors / shadows / radius) ---------- */
+/* ---------------------------
+   2) Design tokens
+   --------------------------- */
 :root{
-  /* Text */
-  --ink: #0f172a;              /* deep navy */
-  --muted: #64748b;            /* slate */
+  /* Text palette (from your mockup) */
+  --ink: #25374E;
+  --ink-2: #3C506E;
+  --muted: #566D8A;
 
-  /* Brand accents */
-  --blue: #2563eb;             /* Technion-ish blue + "Lab" */
-  --blue-2: #1d4ed8;           /* slightly deeper blue for hover */
-  --magenta: #a21caf;          /* magenta accent */
-  --magenta-2: #7e22ce;        /* purple-magenta for gradient depth */
+  /* Accent palette (from your mockup) */
+  --lab-cyan: #1288C4;
+  --outline-blue: #214DC7;
+  --primary-magenta: #9C3185;
 
-  /* UI */
-  --line: rgba(229,231,235,.9);
+  /* UI neutrals */
   --bg: #ffffff;
-  --shadow-1: 0 10px 30px rgba(15,23,42,.06);
-  --shadow-2: 0 14px 34px rgba(15,23,42,.10);
+  --panel: rgba(255,255,255,.92);
+  --line: rgba(229,231,235,.85);
 
-  /* Radius */
+  /* Shadows / radius */
+  --shadow-1: 0 10px 28px rgba(37,55,78,.08);
+  --shadow-2: 0 16px 40px rgba(37,55,78,.10);
   --r-lg: 18px;
   --r-md: 14px;
 }
 
-/* ---------- C) Base reset ---------- */
-*{ box-sizing:border-box; }
-html, body{ margin:0; padding:0; }
+/* ---------------------------
+   3) Base reset + defaults
+   --------------------------- */
+*{ box-sizing: border-box; }
+html, body{ margin: 0; padding: 0; }
+
 body{
-  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.65;
 }
 
-/* Default links (blue, like mockup) */
-a{ color: var(--blue); }
+/* Links */
+a{ color: var(--outline-blue); }
 a:hover{ opacity: .95; }
 
 /* ============================================================
-   NAVBAR (sticky, light, clean)
+   NAVBAR
    ============================================================ */
 .navbar{
   position: sticky;
   top: 0;
   z-index: 20;
 
-  /* light translucent bar */
-  background: rgba(255,255,255,.86);
+  background: rgba(255,255,255,.88);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(229,231,235,.75);
 }
@@ -66,33 +80,31 @@ a:hover{ opacity: .95; }
   margin: 0 auto;
   padding: 14px 20px;
 
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 18px;
 }
 
-/* Left brand group (Technion logo + wordmark) */
+/* Brand: Technion logo + wordmark */
 .brand{
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   gap: 12px;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-/* Technion logo image (blue) */
 .brand img{
-  height: 34px;        /* tweak if needed */
+  height: 34px;
   width: auto;
-  display:block;
+  display: block;
 }
 
-/* Wordmark: TEMA (navy) + Lab (blue) */
+/* Small wordmark in navbar */
 .logo{
-  display:flex;
-  align-items:baseline;
+  display: flex;
+  align-items: baseline;
   gap: 6px;
-  text-decoration:none;
   line-height: 1;
 }
 
@@ -106,140 +118,154 @@ a:hover{ opacity: .95; }
 .logo .lab{
   font-weight: 900;
   letter-spacing: -0.01em;
-  color: var(--blue);
+  color: var(--outline-blue); /* navbar "Lab" can be deeper blue */
   font-size: 18px;
 }
 
-/* Nav links (Research / Projects / Team) */
-nav a{
-  text-decoration:none;
+/* Right-side links */
+.nav-links a{
+  text-decoration: none;
   color: var(--ink);
   font-weight: 600;
   margin-left: 18px;
   opacity: .92;
 }
-nav a:hover{ opacity: 1; }
+.nav-links a:hover{ opacity: 1; }
 
-/* "Join Us" top-right button (magenta, like mockup) */
-nav a.btn{
+/* Join Us pill — keep it MAGENTA only */
+.nav-links a.btn{
   padding: 10px 14px;
   border-radius: 12px;
 
-  background: linear-gradient(135deg, var(--magenta), var(--magenta-2));
-  color: white;
+  background: var(--primary-magenta);
+  color: #fff;
 
-  box-shadow: 0 10px 20px rgba(162,28,175,.18);
+  box-shadow: 0 10px 20px rgba(156,49,133,.18);
 }
 
 /* ============================================================
-   HERO (light blue+magenta haze, airy)
+   HERO (left aligned like the mockup)
    ============================================================ */
 .hero{
-  min-height: 72vh;
-  display:flex;
-  align-items:center;
-  padding: 64px 20px;
+  /* airy top spacing under navbar */
+  padding: 96px 20px 70px;
 
-  /* soft haze similar to mockup */
+  /* light haze similar to your mockup background */
   background:
-    radial-gradient(1200px 600px at 20% 20%, rgba(162,28,175,.10), transparent 55%),
-    radial-gradient(1000px 500px at 80% 30%, rgba(37,99,235,.12), transparent 55%),
-    linear-gradient(180deg,#ffffff,#f8fafc);
+    radial-gradient(1150px 520px at 18% 22%, rgba(156,49,133,.10), transparent 58%),
+    radial-gradient(1050px 520px at 78% 30%, rgba(18,136,196,.14), transparent 60%),
+    linear-gradient(180deg, #ffffff, #f7f9fc);
 }
 
 .hero-content{
   max-width: 1200px;
   margin: 0 auto;
+  text-align: left;
 }
 
-/* Optional kicker line (if you keep it) */
-.kicker{
-  display:inline-block;
-  font-weight: 800;
-  letter-spacing: .10em;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: var(--muted);
-  margin-bottom: 14px;
+/* Big wordmark inside hero */
+.hero-brand{
+  margin: 0 0 16px;
+  line-height: 1.0;
 }
 
-/* Hero H1 (deep navy, bold) */
-.hero h1{
-  font-size: 56px;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+/* TEMA — deep navy */
+.hero-brand .tema{
+  font-family: Montserrat, Inter, system-ui, sans-serif;
   font-weight: 900;
-  margin: 14px 0 14px;
+  letter-spacing: -0.03em;
   color: var(--ink);
+  font-size: 86px;
 }
 
-/* Hero subtitle (slate) */
-.hero h3{
-  font-size: 20px;
+/* Lab — cyan (exact mockup cue) */
+.hero-brand .lab{
+  font-family: Montserrat, Inter, system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--lab-cyan);
+  font-size: 86px;
+  margin-left: 8px;
+}
+
+/* Second line */
+.hero h2{
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink-2);
+  margin: 0 0 14px;
+  font-size: 38px;
+}
+
+/* Third line */
+.hero p.lead{
+  font-size: 22px;
   font-weight: 500;
   color: var(--muted);
-  margin: 0 0 28px;
+  margin: 0 0 26px;
+}
+
+.hero p.lead em{
+  font-style: italic;
+  color: var(--ink-2);
 }
 
 /* ============================================================
-   HERO BUTTONS (match mockup)
-   - Primary: magenta gradient filled
-   - Secondary: blue outline
+   HERO BUTTONS (exact colors)
    ============================================================ */
 .hero-buttons{
-  display:flex;
-  gap: 16px;
-  margin: 10px 0 34px;
+  display: flex;
+  gap: 18px;
+  margin: 0 0 40px;
 }
 
 .hero-buttons a{
-  display:inline-block;
-  padding: 14px 26px;
-  border-radius: 14px;
-  text-decoration:none;
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 12px;
+  text-decoration: none;
   font-weight: 700;
-  font-size: 15px;
-  transition: all .25s ease;
+  font-size: 16px;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
 }
 
-/* Primary button — EXACT mockup magenta */
+/* Primary — exact magenta fill */
 .hero-buttons .primary{
-  background: #9C3185;            /* exact color from your design */
+  background: var(--primary-magenta); /* #9C3185 */
   color: #ffffff;
-  box-shadow: 0 14px 28px rgba(156,49,133,.28);
   border: none;
+  box-shadow: 0 14px 28px rgba(156,49,133,.28);
 }
-
 .hero-buttons .primary:hover{
   transform: translateY(-2px);
   box-shadow: 0 18px 34px rgba(156,49,133,.38);
 }
 
-
-/* Secondary CTA = blue outline */
+/* Secondary — exact blue outline */
 .hero-buttons .secondary{
-  background: rgba(255,255,255,.92);
-  border: 2px solid var(--blue);
-  color: var(--blue);
+  background: rgba(255,255,255,.90);
+  border: 2px solid var(--outline-blue); /* #214DC7 */
+  color: var(--outline-blue);
 }
 .hero-buttons .secondary:hover{
-  background: var(--blue);
-  color: white;
+  background: var(--outline-blue);
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
 /* ============================================================
-   HERO THEME CARDS (3 cards row)
+   3 CARDS UNDER HERO
    ============================================================ */
 .hero-cards{
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin-top: 8px;
 }
 
 .card{
-  background: rgba(255,255,255,.90);
+  background: var(--panel);
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
   padding: 18px 18px 16px;
@@ -249,6 +275,7 @@ nav a.btn{
 .card-title{
   font-weight: 900;
   margin-bottom: 8px;
+  color: var(--ink);
 }
 
 .card-text{
@@ -257,92 +284,103 @@ nav a.btn{
 }
 
 /* ============================================================
-   ACTIVE PROJECTS STRIP (3 visible + horizontal scroll)
+   ACTIVE PROJECTS STRIP
+   - show ~3 cards in view
+   - allow horizontal scrolling
    ============================================================ */
-.projects-strip{ margin-top: 48px; }
+.projects-strip{
+  margin-top: 48px;
+}
 
 .strip-head{
-  display:flex;
-  align-items:baseline;
-  justify-content:space-between;
-  gap:16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
   margin-bottom: 18px;
 }
 
 .strip-kicker{
   font-weight: 900;
-  letter-spacing:.10em;
-  text-transform:uppercase;
-  font-size:12px;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  font-size: 12px;
   color: var(--muted);
 }
 
 .strip-link{
-  text-decoration:none;
+  text-decoration: none;
   font-weight: 800;
-  color: var(--blue);
+  color: var(--outline-blue);
 }
 
+/* Horizontal scroll container */
 .strip-scroll{
-  display:flex;
+  display: flex;
   gap: 20px;
-  overflow-x:auto;
+  overflow-x: auto;
   padding-bottom: 14px;
+
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
 
+/* scrollbar (optional, subtle) */
 .strip-scroll::-webkit-scrollbar{ height: 10px; }
 .strip-scroll::-webkit-scrollbar-thumb{
-  background: rgba(15,23,42,.15);
+  background: rgba(37,55,78,.18);
   border-radius: 999px;
 }
 .strip-scroll::-webkit-scrollbar-track{
-  background: rgba(15,23,42,.05);
+  background: rgba(37,55,78,.06);
   border-radius: 999px;
 }
 
+/* Project cards: 32% = roughly 3 visible on desktop */
 .pcard{
   flex: 0 0 32%;
   min-width: 300px;
   max-width: 380px;
 
-  background: rgba(255,255,255,.92);
+  background: var(--panel);
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
   padding: 22px;
 
-  text-decoration:none;
+  text-decoration: none;
   color: var(--ink);
 
   box-shadow: var(--shadow-1);
   scroll-snap-align: start;
   position: relative;
-  transition: all .2s ease;
+
+  transition: transform .18s ease, border-color .18s ease;
 }
+
 .pcard:hover{
   transform: translateY(-3px);
-  border-color: rgba(37,99,235,.30);
+  border-color: rgba(18,136,196,.35);
 }
 
 .ptitle{
   font-weight: 900;
   margin-bottom: 10px;
   font-size: 18px;
+  color: var(--ink);
 }
 
 .ptext{
   color: var(--muted);
   line-height: 1.55;
-  padding-right: 20px;
+  padding-right: 22px;
 }
 
-/* Arrow in blue like mockup */
+/* Arrow */
 .parrow{
-  position:absolute;
+  position: absolute;
   right: 18px;
   bottom: 16px;
-  color: var(--blue);
+  color: var(--outline-blue);
   font-weight: 900;
 }
 
@@ -350,9 +388,30 @@ nav a.btn{
    RESPONSIVE
    ============================================================ */
 @media (max-width: 900px){
-  .hero h1{ font-size: 42px; }
-  .hero-cards{ grid-template-columns: 1fr; }
-  .hero-buttons{ flex-direction:column; align-items:flex-start; }
-  .pcard{ flex: 0 0 85%; max-width: none; }
-  nav a{ margin-left: 12px; }
+  .hero{ padding-top: 86px; }
+
+  .hero-brand .tema,
+  .hero-brand .lab{
+    font-size: 54px;
+  }
+
+  .hero h2{ font-size: 26px; }
+  .hero p.lead{ font-size: 18px; }
+
+  .hero-buttons{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-cards{
+    grid-template-columns: 1fr;
+  }
+
+  /* on mobile, each project card is wider */
+  .pcard{
+    flex: 0 0 85%;
+    max-width: none;
+  }
+
+  .nav-links a{ margin-left: 12px; }
 }
