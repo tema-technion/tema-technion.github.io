@@ -19,7 +19,7 @@
       <rect width="1600" height="900" fill="url(#fadeRight)"/>
     </mask>
 
-    <!-- Soft glow for a few bigger nodes (adds “3D”) -->
+    <!-- Soft glow for a few bigger nodes (adds 3D) -->
     <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="2.2" result="b"/>
       <feMerge>
@@ -151,7 +151,7 @@
       <path class="e2" d="M635 560 L660 480 L745 430" />
       <path class="e2" d="M660 480 L795 455 L900 530 L775 610" />
 
-      <!-- Densifying triangles (fills “missing links”) -->
+      <!-- Densifying triangles (fills â€œmissing linksâ€) -->
       <path class="e1" d="M140 730 L225 455" />
       <path class="e1" d="M225 455 L265 640" />
       <path class="e1" d="M265 640 L385 710" />
@@ -169,7 +169,7 @@
       <path class="e1" d="M660 480 L775 610" />
       <path class="e1" d="M795 455 L775 610" />
 
-      <!-- Extra micro edges for “mesh” feel -->
+      <!-- Extra micro edges for â€œmeshâ€ feel -->
       <path class="e1" d="M225 455 L310 540" />
       <path class="e1" d="M310 540 L345 420" />
       <path class="e1" d="M470 490 L515 615" />
@@ -265,4 +265,5 @@
     </g>
 
   </g>
+
 </svg>
