@@ -4,12 +4,13 @@ title: TEMA Lab
 ---
 
 <!-- ======================================================
-     HERO (only appears once now)
+     HERO
      ====================================================== -->
-<section class="hero">
+<section class="hero hero--photo">
+  <div class="hero-overlay"></div>
+
   <div class="hero-inner">
 
-    <!-- Wordmark in hero -->
     <h1 class="hero-title">
       <span class="hero-tema">TEMA</span><span class="hero-lab">Lab</span>
     </h1>
@@ -20,12 +21,15 @@ title: TEMA Lab
       Modeling human choice within <em>complex mobility networks</em>.
     </p>
 
-    <!-- Primary + Secondary buttons -->
     <div class="hero-actions">
-      <a class="btn btn-primary" href="/research/">Explore Our Research</a>
-      <a class="btn btn-secondary" href="/projects/">View Projects</a>
+      <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">Explore Our Research</a>
+      <a class="btn btn-secondary" href="{{ '/projects/' | relative_url }}">View Projects</a>
     </div>
-    
+
+  </div>
+</section>
+
+
     <!-- ======================================================
          3 PILLAR CARDS
          ====================================================== -->
