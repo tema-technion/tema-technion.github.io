@@ -377,8 +377,9 @@ a:hover{ text-decoration: none; }
   background-position: center;
 
   /* keep it subtle */
-  opacity: 0.80;
+  opacity: 0.90;
   mix-blend-mode: screen; /* looks good over photo + white wash */
+  filter: blur(0.15px);
 }
 .hero.hero--photo .hero-inner{
   position: relative;
