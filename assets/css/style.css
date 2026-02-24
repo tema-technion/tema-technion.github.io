@@ -370,21 +370,6 @@ a:hover{ text-decoration: none; }
   border-radius: 22px;
 }
 
-/* White overlay (optional but recommended) */
-/*.hero.hero--photo .hero-overlay{
-  position: absolute;
-  inset: 0;
-  border-radius: 22px;
-  z-index: 1;
-
-  background: linear-gradient(
-    to right,
-    rgba(255,255,255,0.35) 0%,
-    rgba(255,255,255,0.18) 45%,
-    rgba(255,255,255,0.25) 100%
-  );
-}
-*/ 
 /* Network layer ABOVE overlay */
 .hero.hero--photo::after{
   content:"";
