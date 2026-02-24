@@ -90,6 +90,3 @@ title: TEMA Lab
         </a>
       </div>
     </section>
-
-  </div>
-</section>
