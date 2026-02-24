@@ -52,7 +52,7 @@ title: TEMA Lab
 <!-- ======================================================
          ACTIVE PROJECTS STRIP (scrollable; 3 visible on desktop)
          ====================================================== -->
-    <section class="strip">
+<section class="strip">
       <div class="strip-head">
         <span class="strip-kicker">ACTIVE PROJECTS</span>
         <a class="strip-link" href="/projects/">View all →</a>
