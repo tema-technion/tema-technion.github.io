@@ -377,7 +377,7 @@ a:hover{ text-decoration: none; }
   background-position: center;
 
   /* keep it subtle */
-  opacity: 0.70;
+  opacity: 0.80;
   mix-blend-mode: screen; /* looks good over photo + white wash */
 }
 .hero.hero--photo .hero-inner{
