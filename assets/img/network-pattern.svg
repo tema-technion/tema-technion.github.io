@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
   <defs>
-    <!-- Fade from edges so the center stays clean -->
-    <radialGradient id="fadeLeft" cx="0.18" cy="0.62" r="0.78">
+    <!-- Fade from edges, keep center cleaner -->
+    <radialGradient id="fadeLeft" cx="0.18" cy="0.62" r="0.82">
       <stop offset="0" stop-color="white" stop-opacity="1"/>
-      <stop offset="0.55" stop-color="white" stop-opacity="0.60"/>
+      <stop offset="0.55" stop-color="white" stop-opacity="0.65"/>
       <stop offset="1" stop-color="white" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="fadeRight" cx="0.86" cy="0.30" r="0.82">
+    <radialGradient id="fadeRight" cx="0.86" cy="0.30" r="0.88">
       <stop offset="0" stop-color="white" stop-opacity="1"/>
-      <stop offset="0.55" stop-color="white" stop-opacity="0.60"/>
+      <stop offset="0.55" stop-color="white" stop-opacity="0.65"/>
       <stop offset="1" stop-color="white" stop-opacity="0"/>
     </radialGradient>
 
@@ -20,95 +20,114 @@
     </mask>
 
     <style>
-      /* White links, varying weights */
-      .e1{ stroke:#fff; stroke-opacity:.62; stroke-width:1.6; fill:none; }
-      .e2{ stroke:#fff; stroke-opacity:.70; stroke-width:2.2; fill:none; }
-      .e3{ stroke:#fff; stroke-opacity:.78; stroke-width:3.0; fill:none; }
+      /* White edges only, varied weights (triangulated mesh feel) */
+      .e1{ stroke:#fff; stroke-opacity:.50; stroke-width:1.2; fill:none; }
+      .e2{ stroke:#fff; stroke-opacity:.62; stroke-width:1.8; fill:none; }
+      .e3{ stroke:#fff; stroke-opacity:.74; stroke-width:2.6; fill:none; }
 
       /* Nodes */
-      .nW { fill:#fff; fill-opacity:.92; }
+      .nW { fill:#fff; fill-opacity:.95; }
       .nW2{ fill:#fff; fill-opacity:.70; }
-      /* ~5% magenta nodes only */
-      .nM { fill:#9c3185; fill-opacity:.82; }
+      .nM { fill:#9c3185; fill-opacity:.85; } /* ~5% nodes only */
     </style>
   </defs>
 
   <g mask="url(#maskBoth)">
-    <!-- =======================
-         LEFT CLUSTER
-         ======================= -->
+    <!-- =====================================================
+         LEFT DENSE MESH (triangulated)
+         ===================================================== -->
     <g>
       <!-- edges -->
-      <path class="e2" d="M150 720 L270 640 L410 700 L560 610" />
-      <path class="e1" d="M270 640 L330 540 L450 560 L560 610" />
-      <path class="e2" d="M330 540 L240 450 L380 420 L500 470" />
-      <path class="e1" d="M380 420 L450 560" />
-      <path class="e3" d="M450 560 L410 700" />
-      <path class="e2" d="M500 470 L620 440" />
-      <path class="e1" d="M560 610 L700 570" />
-      <path class="e2" d="M240 450 L190 520 L250 600 L270 640" />
-      <path class="e1" d="M190 520 L120 560 L150 720" />
-      <path class="e2" d="M250 600 L180 680 L150 720" />
+      <path class="e2" d="M120 720 L220 660 L320 710 L410 640 L520 690" />
+      <path class="e1" d="M220 660 L260 560 L360 590 L410 640" />
+      <path class="e2" d="M260 560 L180 500 L280 450 L380 500 L360 590" />
+      <path class="e1" d="M180 500 L120 560 L120 720" />
+      <path class="e2" d="M280 450 L220 380 L320 340 L420 380 L380 500" />
+      <path class="e1" d="M320 340 L360 260 L460 290 L520 340" />
+      <path class="e2" d="M420 380 L520 340 L600 410 L520 470 L380 500" />
+      <path class="e3" d="M410 640 L520 570 L640 610 L520 690" />
+      <path class="e1" d="M520 570 L520 470 L600 410" />
+      <path class="e2" d="M520 470 L640 450 L720 520 L640 610" />
+      <path class="e1" d="M640 450 L740 430 L820 480 L720 520" />
+      <path class="e2" d="M360 590 L520 570" />
+      <path class="e1" d="M320 710 L410 640" />
+      <path class="e1" d="M520 340 L640 450" />
+      <path class="e2" d="M460 290 L420 380" />
+      <path class="e1" d="M220 380 L180 500" />
 
-      <!-- nodes (mostly white) -->
-      <circle class="nW"  cx="150" cy="720" r="11"/>
+      <!-- nodes (many, varied sizes) -->
+      <circle class="nW"  cx="120" cy="720" r="10"/>
       <circle class="nW2" cx="120" cy="560" r="6"/>
-      <circle class="nW"  cx="180" cy="680" r="7"/>
-      <circle class="nW2" cx="190" cy="520" r="6"/>
-      <circle class="nW"  cx="240" cy="450" r="9"/>
-      <circle class="nW"  cx="250" cy="600" r="8"/>
-      <circle class="nW"  cx="270" cy="640" r="10"/>
-      <circle class="nW2" cx="330" cy="540" r="7"/>
-      <circle class="nW"  cx="380" cy="420" r="10"/>
-      <circle class="nW2" cx="410" cy="700" r="7"/>
-      <circle class="nW"  cx="450" cy="560" r="12"/>
-      <circle class="nW2" cx="500" cy="470" r="6"/>
-      <circle class="nW"  cx="560" cy="610" r="11"/>
-      <circle class="nW2" cx="620" cy="440" r="7"/>
-      <circle class="nW2" cx="700" cy="570" r="6"/>
+      <circle class="nW"  cx="180" cy="500" r="7"/>
+      <circle class="nW2" cx="220" cy="660" r="6"/>
+      <circle class="nW"  cx="260" cy="560" r="9"/>
+      <circle class="nW2" cx="280" cy="450" r="6"/>
+      <circle class="nW"  cx="220" cy="380" r="8"/>
+      <circle class="nW2" cx="320" cy="340" r="6"/>
+      <circle class="nW"  cx="360" cy="260" r="9"/>
+      <circle class="nW"  cx="460" cy="290" r="11"/>
+      <circle class="nW2" cx="420" cy="380" r="6"/>
+      <circle class="nW"  cx="380" cy="500" r="10"/>
+      <circle class="nW2" cx="360" cy="590" r="7"/>
+      <circle class="nW"  cx="410" cy="640" r="11"/>
+      <circle class="nW2" cx="320" cy="710" r="6"/>
+      <circle class="nW"  cx="520" cy="690" r="10"/>
+      <circle class="nW2" cx="520" cy="570" r="7"/>
+      <circle class="nW"  cx="520" cy="470" r="9"/>
+      <circle class="nW2" cx="600" cy="410" r="6"/>
+      <circle class="nW"  cx="640" cy="450" r="10"/>
+      <circle class="nW2" cx="740" cy="430" r="6"/>
+      <circle class="nW"  cx="820" cy="480" r="9"/>
+      <circle class="nW"  cx="720" cy="520" r="11"/>
+      <circle class="nW2" cx="640" cy="610" r="7"/>
 
-      <!-- magenta nodes (~5%) -->
-      <circle class="nM" cx="240" cy="450" r="5.5"/>
+      <!-- ~5% magenta nodes -->
+      <circle class="nM" cx="520" cy="470" r="6"/>
     </g>
 
-    <!-- =======================
-         RIGHT CLUSTER
-         ======================= -->
+    <!-- =====================================================
+         RIGHT DENSE MESH (triangulated)
+         ===================================================== -->
     <g>
       <!-- edges -->
-      <path class="e2" d="M980 240 L1120 160 L1260 220 L1390 140" />
-      <path class="e1" d="M1120 160 L1150 290 L1280 300 L1260 220" />
-      <path class="e2" d="M1150 290 L1230 380 L1360 360 L1480 420" />
-      <path class="e3" d="M1280 300 L1340 260 L1440 300 L1480 420" />
-      <path class="e1" d="M1390 140 L1520 170" />
-      <path class="e2" d="M1440 300 L1520 260" />
-      <path class="e1" d="M1230 380 L1200 490 L1320 520 L1480 420" />
-      <path class="e2" d="M1320 520 L1520 600" />
-      <path class="e1" d="M1200 490 L1120 560 L980 520" />
-      <path class="e2" d="M1120 560 L1320 520" />
+      <path class="e2" d="M960 240 L1080 170 L1210 220 L1330 150 L1460 210" />
+      <path class="e1" d="M1080 170 L1120 290 L1240 300 L1210 220" />
+      <path class="e2" d="M1120 290 L1210 380 L1340 360 L1460 420" />
+      <path class="e3" d="M1240 300 L1320 260 L1440 300 L1460 420" />
+      <path class="e1" d="M1330 150 L1500 170" />
+      <path class="e2" d="M1440 300 L1500 260" />
+      <path class="e1" d="M1210 380 L1180 490 L1320 520 L1460 420" />
+      <path class="e2" d="M1320 520 L1500 600" />
+      <path class="e1" d="M1180 490 L1100 560 L980 520" />
+      <path class="e2" d="M1100 560 L1320 520" />
+      <path class="e1" d="M1210 220 L1320 260" />
+      <path class="e2" d="M1340 360 L1440 300" />
+      <path class="e1" d="M1080 170 L960 240" />
+      <path class="e2" d="M1210 380 L1240 300" />
 
       <!-- nodes -->
-      <circle class="nW"  cx="980"  cy="240" r="9"/>
-      <circle class="nW"  cx="1120" cy="160" r="11"/>
-      <circle class="nW2" cx="1150" cy="290" r="7"/>
-      <circle class="nW2" cx="1200" cy="490" r="6"/>
-      <circle class="nW"  cx="1230" cy="380" r="10"/>
-      <circle class="nW"  cx="1260" cy="220" r="13"/>
-      <circle class="nW2" cx="1280" cy="300" r="7"/>
+      <circle class="nW"  cx="960"  cy="240" r="9"/>
+      <circle class="nW"  cx="1080" cy="170" r="11"/>
+      <circle class="nW2" cx="1120" cy="290" r="7"/>
+      <circle class="nW2" cx="1180" cy="490" r="6"/>
+      <circle class="nW"  cx="1210" cy="380" r="10"/>
+      <circle class="nW"  cx="1210" cy="220" r="12"/>
+      <circle class="nW2" cx="1240" cy="300" r="7"/>
       <circle class="nW"  cx="1320" cy="520" r="10"/>
-      <circle class="nW2" cx="1340" cy="260" r="6"/>
-      <circle class="nW2" cx="1360" cy="360" r="7"/>
-      <circle class="nW"  cx="1390" cy="140" r="10"/>
-      <circle class="nW"  cx="1440" cy="300" r="8"/>
-      <circle class="nW2" cx="1480" cy="420" r="7"/>
+      <circle class="nW2" cx="1320" cy="260" r="6"/>
+      <circle class="nW"  cx="1340" cy="360" r="8"/>
+      <circle class="nW"  cx="1330" cy="150" r="10"/>
+      <circle class="nW"  cx="1440" cy="300" r="9"/>
+      <circle class="nW2" cx="1460" cy="420" r="7"/>
       <circle class="nW2" cx="980"  cy="520" r="6"/>
-      <circle class="nW2" cx="1120" cy="560" r="6"/>
-      <circle class="nW2" cx="1520" cy="170" r="7"/>
-      <circle class="nW2" cx="1520" cy="260" r="7"/>
-      <circle class="nW2" cx="1520" cy="600" r="7"/>
+      <circle class="nW2" cx="1100" cy="560" r="6"/>
+      <circle class="nW2" cx="1500" cy="170" r="7"/>
+      <circle class="nW2" cx="1500" cy="260" r="7"/>
+      <circle class="nW2" cx="1500" cy="600" r="7"/>
+      <circle class="nW2" cx="1460" cy="210" r="6"/>
 
-      <!-- magenta nodes (~5%) -->
-      <circle class="nM" cx="1440" cy="300" r="6"/>
+      <!-- ~5% magenta nodes -->
+      <circle class="nM" cx="1340" cy="360" r="6"/>
     </g>
   </g>
 </svg>
