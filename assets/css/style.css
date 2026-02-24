@@ -360,7 +360,26 @@ a:hover{ text-decoration: none; }
       rgba(255,255,255,0.25) 100%
     );
 }
+/* =========================
+   HERO NETWORK PATTERN LAYER
+   ========================= */
+.hero.hero--photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  border-radius:22px;
 
+  /* pattern on top */
+  background-image: url("../img/network-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-position: right 15%;
+
+  /* keep it subtle */
+  opacity: 0.55;
+  mix-blend-mode: screen; /* looks good over photo + white wash */
+}
 .hero.hero--photo .hero-inner{
   position: relative;
   z-index: 1;
