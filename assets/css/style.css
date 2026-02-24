@@ -79,9 +79,9 @@ a:hover{ text-decoration: none; }
 }
 
 .brand-mark{
-  width: 38px;
-  height: auto;
-  display:block;
+  height: 34px;   /* try 34–42 */
+  width: auto;
+  display: block;
 }
 
 .brand-wordmark{
