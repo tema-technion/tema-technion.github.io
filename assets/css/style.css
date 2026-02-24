@@ -207,6 +207,41 @@ a:hover{ text-decoration: none; }
   color: var(--blue-cta);
 }
 
+/* =========================
+   HERO PHOTO VERSION
+   ========================= */
+
+.hero.hero--photo {
+  background: none; /* remove radial tint */
+  position: relative;
+  overflow: hidden; /* clip overlay to rounded corners */
+
+  background-image: url("../img/hero-washington.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+/* Light overlay for readability */
+.hero.hero--photo .hero-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 22px; /* match hero */
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0.92) 0%,
+    rgba(255,255,255,0.80) 45%,
+    rgba(255,255,255,0.25) 100%
+  );
+}
+
+/* Make sure text stays above overlay */
+.hero.hero--photo .hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+
 /* -----------------------------
    6) Pillar cards row (3 cards)
    ----------------------------- */
