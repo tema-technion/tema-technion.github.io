@@ -32,8 +32,8 @@ title: TEMA Lab
 <!-- ======================================================
          3 PILLAR CARDS
          ====================================================== -->
-    <div class="pillars">
-      <div class="pillar">
+ <div class="pillars">
+  <div class="pillar">
         <div class="pillar-title">Behavioral Modeling</div>
         <div class="pillar-text">Perception, memory, and bounded rationality in travel decisions.</div>
       </div>
