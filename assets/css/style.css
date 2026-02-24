@@ -381,7 +381,7 @@ a:hover{ text-decoration: none; }
   mix-blend-mode: lighten; /* looks good over photo + white wash */
   filter: none;
 }
-.hero.hero--photo{
+.hero.hero--photo .hero-inner{
   position: relative;
-  overflow: hidden;
+  z-index: 1;
 }
