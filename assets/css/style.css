@@ -207,42 +207,6 @@ a:hover{ text-decoration: none; }
   color: var(--blue-cta);
 }
 
-/* =========================
-   HERO PHOTO VERSION (photo + tint)
-   ========================= */
-
-.hero.hero--photo{
-  position: relative;
-  overflow: hidden;      /* clips overlay to rounded corners */
-  background-image: url("../img/hero-washington.jpg");
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-}
-
-/* Overlay now contains BOTH: your tint + readability gradient */
-.hero.hero--photo .hero-overlay{
-  position: absolute;
-  inset: 0;
-  border-radius: 22px;
-
-  background:
-    radial-gradient(900px 420px at 12% 20%, rgba(156,49,133,0.14) 0%, rgba(156,49,133,0.00) 60%),
-    radial-gradient(900px 420px at 78% 18%, rgba(18,136,196,0.14) 0%, rgba(18,136,196,0.00) 60%),
-    linear-gradient(
-      to right,
-      rgba(255,255,255,0.92) 0%,
-      rgba(255,255,255,0.80) 45%,
-      rgba(255,255,255,0.25) 100%
-    );
-}
-
-/* text above overlay */
-.hero.hero--photo .hero-inner{
-  position: relative;
-  z-index: 1;
-}
-
 
 /* -----------------------------
    6) Pillar cards row (3 cards)
