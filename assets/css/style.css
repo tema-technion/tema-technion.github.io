@@ -399,7 +399,7 @@ a:hover{ text-decoration: none; }
   background-size:cover;
   background-position:center;
 
-  opacity: 0.90;
+  opacity: 0.72;
   mix-blend-mode: lighten;
   filter: none;
 }
