@@ -373,11 +373,11 @@ a:hover{ text-decoration: none; }
   /* pattern on top */
   background-image: url("../img/network-pattern.svg");
   background-repeat: no-repeat;
-  background-size: 70% auto;
-  background-position: right 15%;
+  background-size: cover;
+  background-position: center;
 
   /* keep it subtle */
-  opacity: 0.55;
+  opacity: 0.70;
   mix-blend-mode: screen; /* looks good over photo + white wash */
 }
 .hero.hero--photo .hero-inner{
