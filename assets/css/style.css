@@ -379,8 +379,8 @@ a:hover{ text-decoration: none; }
 
   background: linear-gradient(
     to right,
-    rgba(255,255,255,0.92) 0%,
-    rgba(255,255,255,0.80) 45%,
+    rgba(255,255,255,0.35) 0%,
+    rgba(255,255,255,0.18) 45%,
     rgba(255,255,255,0.25) 100%
   );
 }
