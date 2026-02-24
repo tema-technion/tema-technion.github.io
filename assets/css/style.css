@@ -79,7 +79,7 @@ a:hover{ text-decoration: none; }
 }
 
 .brand-mark{
-  height: 34px;   /* try 34–42 */
+  height: 40px;   /* try 34–42 */
   width: auto;
   display: block;
 }
