@@ -363,25 +363,49 @@ a:hover{ text-decoration: none; }
 /* =========================
    HERO NETWORK PATTERN LAYER
    ========================= */
+/* Make hero a stacking context */
+.hero.hero--photo{
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+/* White overlay (optional but recommended) */
+.hero.hero--photo .hero-overlay{
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  z-index: 1;
+
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0.92) 0%,
+    rgba(255,255,255,0.80) 45%,
+    rgba(255,255,255,0.25) 100%
+  );
+}
+
+/* Network layer ABOVE overlay */
 .hero.hero--photo::after{
   content:"";
   position:absolute;
   inset:0;
   pointer-events:none;
   border-radius:22px;
+  z-index: 2;
 
-  /* pattern on top */
   background-image: url("../img/network-pattern.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 
-  /* keep it subtle */
   opacity: 0.72;
-  mix-blend-mode: lighten; /* looks good over photo + white wash */
+  mix-blend-mode: lighten;
   filter: none;
 }
+
+/* Text ABOVE everything */
 .hero.hero--photo .hero-inner{
   position: relative;
-  z-index: -1;
+  z-index: 3;
 }
