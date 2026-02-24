@@ -9,28 +9,40 @@
 
 <body>
 
-  
+
+  <!-- =========================
+       TOP NAVBAR (site frame)
+       ========================= -->
   <header class="navbar">
     <div class="nav-container">
- <a class="brand" href="{{ '/' | relative_url }}">
-<img src="{{ '/technion-logo.png' | relative_url }}" alt="Technion logo">
-  <div class="logo">
-    <span class="tema">TEMA</span>
-    <span class="lab">Lab</span>
-  </div>
-</a>
-      <nav>
+
+      <!-- Brand = clickable and returns to home ALWAYS -->
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <!-- Technion logo image (put file here: /assets/img/technion-logo.png) -->
+        <img class="brand-mark"
+             src="{{ '/assets/img/technion-logo.png' | relative_url }}"
+             alt="Technion — Israel Institute of Technology">
+
+        <!-- Lab wordmark -->
+        <div class="brand-wordmark">
+          <span class="brand-tema">TEMA</span><span class="brand-lab">Lab</span>
+        </div>
+      </a>
+
+      <!-- Navigation links -->
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="{{ '/research/' | relative_url }}">Research</a>
         <a href="{{ '/projects/' | relative_url }}">Projects</a>
         <a href="{{ '/team/' | relative_url }}">Team</a>
-        <a class="btn" href="{{ '/join/' | relative_url }}">Join Us</a>
+        <a class="nav-cta" href="{{ '/join/' | relative_url }}">Join Us</a>
       </nav>
+
     </div>
   </header>
 
-  <main>
-    {{ content }}
-  </main>
+<main class="page">
+  {{ content }}
+</main>
 
 </body>
 </html>
