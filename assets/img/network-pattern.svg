@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <!-- Fade on edges so center stays cleaner -->
+    <radialGradient id="fadeLeft" cx="0.16" cy="0.62" r="0.92">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.58" stop-color="#fff" stop-opacity="0.68"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="fadeRight" cx="0.86" cy="0.28" r="0.95">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.58" stop-color="#fff" stop-opacity="0.68"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+
+    <mask id="maskBoth">
+      <rect width="1600" height="900" fill="black"/>
+      <rect width="1600" height="900" fill="url(#fadeLeft)"/>
+      <rect width="1600" height="900" fill="url(#fadeRight)"/>
+    </mask>
+
+    <!-- Soft glow for a few bigger nodes (adds “3D”) -->
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      /* Depth layer edges */
+      .d0{ stroke:#fff; stroke-opacity:.14; stroke-width:0.9; fill:none; }
+      .d1{ stroke:#fff; stroke-opacity:.18; stroke-width:1.1; fill:none; }
+
+      /* Main mesh edges */
+      .e1{ stroke:#fff; stroke-opacity:.26; stroke-width:1.1; fill:none; }
+      .e2{ stroke:#fff; stroke-opacity:.34; stroke-width:1.7; fill:none; }
+      .e3{ stroke:#fff; stroke-opacity:.44; stroke-width:2.6; fill:none; }
+
+      /* Nodes */
+      .nw  { fill:#fff; fill-opacity:.92; }
+      .nw2 { fill:#fff; fill-opacity:.62; }
+      .nm  { fill:#9c3185; fill-opacity:.82; } /* ~5% magenta nodes */
+    </style>
+  </defs>
+
+  <g mask="url(#maskBoth)">
+
+    <!-- =========================================================
+         LEFT SIDE — DEPTH LAYER (faint, many small connections)
+         ========================================================= -->
+    <g transform="translate(6,4)">
+      <path class="d0" d="M70 760 L150 700 L235 740 L310 675 L395 720 L470 650 L545 690 L620 640" />
+      <path class="d0" d="M150 700 L205 620 L300 590 L395 720" />
+      <path class="d1" d="M205 620 L160 545 L240 500 L320 540 L300 590" />
+      <path class="d0" d="M160 545 L120 470 L195 430 L270 465 L240 500" />
+      <path class="d0" d="M195 430 L160 360 L235 315 L315 350 L270 465" />
+      <path class="d0" d="M315 350 L380 300 L455 330 L520 290 L590 330" />
+      <path class="d0" d="M455 330 L470 410 L545 445 L615 400 L590 330" />
+      <path class="d1" d="M470 410 L420 500 L495 545 L575 500 L545 445" />
+      <path class="d0" d="M420 500 L355 565 L430 610 L495 545" />
+      <path class="d0" d="M430 610 L520 620 L585 560 L495 545" />
+      <path class="d0" d="M520 620 L620 640" />
+
+      <circle class="nw2" cx="70"  cy="760" r="4"/>
+      <circle class="nw2" cx="150" cy="700" r="4.2"/>
+      <circle class="nw2" cx="235" cy="740" r="3.8"/>
+      <circle class="nw2" cx="310" cy="675" r="4.0"/>
+      <circle class="nw2" cx="395" cy="720" r="4.2"/>
+      <circle class="nw2" cx="470" cy="650" r="3.8"/>
+      <circle class="nw2" cx="545" cy="690" r="3.8"/>
+      <circle class="nw2" cx="620" cy="640" r="4.0"/>
+
+      <circle class="nw2" cx="205" cy="620" r="3.6"/>
+      <circle class="nw2" cx="300" cy="590" r="3.6"/>
+      <circle class="nw2" cx="160" cy="545" r="3.4"/>
+      <circle class="nw2" cx="240" cy="500" r="3.6"/>
+      <circle class="nw2" cx="120" cy="470" r="3.2"/>
+      <circle class="nw2" cx="195" cy="430" r="3.4"/>
+      <circle class="nw2" cx="270" cy="465" r="3.4"/>
+      <circle class="nw2" cx="160" cy="360" r="3.2"/>
+      <circle class="nw2" cx="235" cy="315" r="3.2"/>
+      <circle class="nw2" cx="315" cy="350" r="3.2"/>
+      <circle class="nw2" cx="380" cy="300" r="3.2"/>
+      <circle class="nw2" cx="455" cy="330" r="3.2"/>
+      <circle class="nw2" cx="520" cy="290" r="3.2"/>
+      <circle class="nw2" cx="590" cy="330" r="3.2"/>
+      <circle class="nw2" cx="470" cy="410" r="3.3"/>
+      <circle class="nw2" cx="545" cy="445" r="3.3"/>
+      <circle class="nw2" cx="615" cy="400" r="3.3"/>
+      <circle class="nw2" cx="420" cy="500" r="3.3"/>
+      <circle class="nw2" cx="495" cy="545" r="3.3"/>
+      <circle class="nw2" cx="575" cy="500" r="3.3"/>
+      <circle class="nw2" cx="355" cy="565" r="3.3"/>
+      <circle class="nw2" cx="430" cy="610" r="3.3"/>
+      <circle class="nw2" cx="520" cy="620" r="3.3"/>
+      <circle class="nw2" cx="585" cy="560" r="3.3"/>
+    </g>
+
+    <!-- =========================================================
+         RIGHT SIDE — DEPTH LAYER (faint, many small connections)
+         ========================================================= -->
+    <g transform="translate(-6,6)">
+      <path class="d0" d="M980 220 L1085 170 L1185 215 L1285 160 L1385 205 L1485 150 L1560 205" />
+      <path class="d0" d="M1085 170 L1135 255 L1215 285 L1295 245 L1285 160" />
+      <path class="d1" d="M1135 255 L1160 350 L1245 380 L1325 340 L1215 285" />
+      <path class="d0" d="M1245 380 L1215 465 L1295 495 L1375 455 L1325 340" />
+      <path class="d0" d="M1375 455 L1465 430 L1560 375 L1560 205" />
+      <path class="d0" d="M1215 465 L1130 545 L1035 505 L980 560" />
+      <path class="d1" d="M1130 545 L1295 495 L1445 565 L1560 520" />
+
+      <circle class="nw2" cx="980"  cy="220" r="3.8"/>
+      <circle class="nw2" cx="1085" cy="170" r="4.2"/>
+      <circle class="nw2" cx="1185" cy="215" r="3.8"/>
+      <circle class="nw2" cx="1285" cy="160" r="4.2"/>
+      <circle class="nw2" cx="1385" cy="205" r="3.8"/>
+      <circle class="nw2" cx="1485" cy="150" r="4.0"/>
+      <circle class="nw2" cx="1560" cy="205" r="4.0"/>
+
+      <circle class="nw2" cx="1135" cy="255" r="3.4"/>
+      <circle class="nw2" cx="1215" cy="285" r="3.4"/>
+      <circle class="nw2" cx="1295" cy="245" r="3.4"/>
+      <circle class="nw2" cx="1160" cy="350" r="3.3"/>
+      <circle class="nw2" cx="1245" cy="380" r="3.3"/>
+      <circle class="nw2" cx="1325" cy="340" r="3.3"/>
+      <circle class="nw2" cx="1215" cy="465" r="3.3"/>
+      <circle class="nw2" cx="1295" cy="495" r="3.5"/>
+      <circle class="nw2" cx="1375" cy="455" r="3.5"/>
+      <circle class="nw2" cx="1465" cy="430" r="3.3"/>
+      <circle class="nw2" cx="1560" cy="375" r="3.5"/>
+      <circle class="nw2" cx="1130" cy="545" r="3.3"/>
+      <circle class="nw2" cx="1035" cy="505" r="3.3"/>
+      <circle class="nw2" cx="980"  cy="560" r="3.3"/>
+      <circle class="nw2" cx="1445" cy="565" r="3.3"/>
+      <circle class="nw2" cx="1560" cy="520" r="3.3"/>
+    </g>
+
+    <!-- =========================================================
+         LEFT SIDE — MAIN MESH (dense, triangulated feel)
+         ========================================================= -->
+    <g>
+      <!-- Primary structure -->
+      <path class="e3" d="M140 730 L265 640 L385 710 L515 615 L650 695 L770 600 L900 530" />
+      <path class="e2" d="M265 640 L310 540 L430 585 L515 615" />
+      <path class="e2" d="M310 540 L225 455 L345 420 L470 490 L430 585" />
+      <path class="e2" d="M345 420 L285 335 L410 300 L535 350 L470 490" />
+      <path class="e2" d="M410 300 L480 235 L605 265 L670 335 L535 350" />
+      <path class="e2" d="M535 350 L670 335 L745 430 L660 480 L470 490" />
+      <path class="e2" d="M515 615 L635 560 L775 610 L650 695" />
+      <path class="e2" d="M635 560 L660 480 L745 430" />
+      <path class="e2" d="M660 480 L795 455 L900 530 L775 610" />
+
+      <!-- Densifying triangles (fills “missing links”) -->
+      <path class="e1" d="M140 730 L225 455" />
+      <path class="e1" d="M225 455 L265 640" />
+      <path class="e1" d="M265 640 L385 710" />
+      <path class="e1" d="M385 710 L515 615" />
+      <path class="e1" d="M310 540 L430 585" />
+      <path class="e1" d="M345 420 L470 490" />
+      <path class="e1" d="M285 335 L345 420" />
+      <path class="e1" d="M410 300 L535 350" />
+      <path class="e1" d="M480 235 L535 350" />
+      <path class="e1" d="M605 265 L670 335" />
+      <path class="e1" d="M670 335 L795 455" />
+      <path class="e1" d="M745 430 L900 530" />
+      <path class="e1" d="M515 615 L650 695" />
+      <path class="e1" d="M635 560 L775 610" />
+      <path class="e1" d="M660 480 L775 610" />
+      <path class="e1" d="M795 455 L775 610" />
+
+      <!-- Extra micro edges for “mesh” feel -->
+      <path class="e1" d="M225 455 L310 540" />
+      <path class="e1" d="M310 540 L345 420" />
+      <path class="e1" d="M470 490 L515 615" />
+      <path class="e1" d="M430 585 L635 560" />
+      <path class="e1" d="M470 490 L660 480" />
+      <path class="e1" d="M535 350 L745 430" />
+      <path class="e1" d="M670 335 L745 430" />
+      <path class="e1" d="M650 695 L770 600" />
+      <path class="e1" d="M770 600 L900 530" />
+
+      <!-- Nodes (varied sizes; a few glow) -->
+      <circle class="nw"  cx="140" cy="730" r="10" filter="url(#glow)"/>
+      <circle class="nw2" cx="225" cy="455" r="6"/>
+      <circle class="nw"  cx="265" cy="640" r="10"/>
+      <circle class="nw2" cx="310" cy="540" r="7"/>
+      <circle class="nw2" cx="285" cy="335" r="6"/>
+      <circle class="nw"  cx="345" cy="420" r="9"/>
+      <circle class="nw"  cx="385" cy="710" r="7"/>
+      <circle class="nw"  cx="410" cy="300" r="9" filter="url(#glow)"/>
+      <circle class="nw"  cx="480" cy="235" r="8"/>
+      <circle class="nw"  cx="535" cy="350" r="12" filter="url(#glow)"/>
+      <circle class="nw"  cx="470" cy="490" r="10"/>
+      <circle class="nw2" cx="430" cy="585" r="7"/>
+      <circle class="nw"  cx="515" cy="615" r="11"/>
+      <circle class="nw2" cx="605" cy="265" r="6"/>
+      <circle class="nw"  cx="670" cy="335" r="10"/>
+      <circle class="nw"  cx="660" cy="480" r="9"/>
+      <circle class="nw2" cx="635" cy="560" r="7"/>
+      <circle class="nw"  cx="650" cy="695" r="10"/>
+      <circle class="nw2" cx="745" cy="430" r="7"/>
+      <circle class="nw"  cx="770" cy="600" r="10"/>
+      <circle class="nw"  cx="795" cy="455" r="9"/>
+      <circle class="nw2" cx="775" cy="610" r="7"/>
+      <circle class="nw2" cx="900" cy="530" r="7"/>
+
+      <!-- Magenta nodes (~5%) -->
+      <circle class="nm" cx="535" cy="350" r="6"/>
+    </g>
+
+    <!-- =========================================================
+         RIGHT SIDE — MAIN MESH (dense, triangulated feel)
+         ========================================================= -->
+    <g>
+      <path class="e3" d="M980 230 L1125 155 L1265 220 L1405 145 L1545 210" />
+      <path class="e2" d="M1125 155 L1165 285 L1285 305 L1265 220" />
+      <path class="e2" d="M1165 285 L1245 385 L1390 360 L1545 430" />
+      <path class="e2" d="M1285 305 L1365 265 L1490 305 L1545 430" />
+      <path class="e2" d="M1245 385 L1215 485 L1345 520 L1545 430" />
+      <path class="e2" d="M1215 485 L1130 565 L1005 520 L980 585" />
+      <path class="e2" d="M1130 565 L1345 520 L1460 600 L1545 560" />
+
+      <!-- Densify -->
+      <path class="e1" d="M980 230 L1165 285" />
+      <path class="e1" d="M1265 220 L1365 265" />
+      <path class="e1" d="M1390 360 L1490 305" />
+      <path class="e1" d="M1165 285 L1285 305" />
+      <path class="e1" d="M1245 385 L1285 305" />
+      <path class="e1" d="M1215 485 L1345 520" />
+      <path class="e1" d="M1345 520 L1545 430" />
+      <path class="e1" d="M1460 600 L1545 560" />
+      <path class="e1" d="M1545 210 L1490 305" />
+      <path class="e1" d="M1405 145 L1545 210" />
+
+      <!-- Extra micro edges -->
+      <path class="e1" d="M1365 265 L1390 360" />
+      <path class="e1" d="M1265 220 L1285 305" />
+      <path class="e1" d="M1245 385 L1390 360" />
+      <path class="e1" d="M1130 565 L1215 485" />
+      <path class="e1" d="M1005 520 L1130 565" />
+
+      <!-- Nodes -->
+      <circle class="nw"  cx="980"  cy="230" r="10"/>
+      <circle class="nw"  cx="1125" cy="155" r="11" filter="url(#glow)"/>
+      <circle class="nw2" cx="1165" cy="285" r="7"/>
+      <circle class="nw"  cx="1265" cy="220" r="12"/>
+      <circle class="nw2" cx="1285" cy="305" r="7"/>
+      <circle class="nw2" cx="1365" cy="265" r="6"/>
+      <circle class="nw"  cx="1405" cy="145" r="10"/>
+      <circle class="nw2" cx="1490" cy="305" r="7"/>
+      <circle class="nw2" cx="1545" cy="210" r="6"/>
+      <circle class="nw"  cx="1245" cy="385" r="10" filter="url(#glow)"/>
+      <circle class="nw2" cx="1390" cy="360" r="7"/>
+      <circle class="nw2" cx="1215" cy="485" r="6"/>
+      <circle class="nw"  cx="1345" cy="520" r="10"/>
+      <circle class="nw2" cx="1545" cy="430" r="7"/>
+      <circle class="nw2" cx="1005" cy="520" r="6"/>
+      <circle class="nw2" cx="1130" cy="565" r="6"/>
+      <circle class="nw2" cx="1460" cy="600" r="7"/>
+      <circle class="nw2" cx="1545" cy="560" r="7"/>
+
+      <!-- Magenta nodes (~5%) -->
+      <circle class="nm" cx="1490" cy="305" r="6"/>
+    </g>
+
+  </g>
+</svg>
