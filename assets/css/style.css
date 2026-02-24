@@ -339,7 +339,7 @@ a:hover{ text-decoration: none; }
 .hero.hero--photo{
   position: relative;
   overflow: hidden; /* clip overlay to rounded corners */
-  background-image: url("../img/hero-washington.jpg");
+  background-image: url("../img/hero-washington.png");
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
