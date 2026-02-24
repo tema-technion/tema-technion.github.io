@@ -155,7 +155,7 @@ a:hover{ text-decoration: none; }
 /* Subtitle */
 .hero-subtitle{
   margin: 0 0 12px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--ink-700);
 }
