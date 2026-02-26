@@ -434,49 +434,49 @@ a:hover{ text-decoration: none; }
 .page {
   max-width: 880px;     /* key: prevents long unreadable lines */
   margin: 0 auto;
-  padding: 48px 24px;
+  padding: 32px 22px;
 }
 
 /* Paragraph rhythm */
 .page p {
-  font-size: 18px;
-  line-height: 1.75;
-  margin: 0 0 18px 0;
+  font-size: 17px;
+  line-height: 1.65;
+  margin: 0 0 14px 0;
 }
 
 /* Main title */
 .page h1 {
-  font-size: 40px;
-  line-height: 1.15;
-  margin: 0 0 18px 0;
+  font-size: 38px;
+  line-height: 1.12;
+  margin: 0 0 14px 0;
 }
 
 /* Major section */
 .page h2 {
-  font-size: 28px;
-  line-height: 1.25;
-  margin: 40px 0 14px 0;   /* more air above sections */
+  font-size: 26px;
+  line-height: 1.12;
+  margin: 28px 0 10px 0;   /* more air above sections */
 }
 
 /* Subsection */
 .page h3 {
-  font-size: 20px;
-  line-height: 1.3;
-  margin: 24px 0 10px 0;
+  font-size: 19px;
+  line-height: 1.25;
+  margin: 16px 0 8px 0;
 }
 
 /* Reduce separator heaviness */
 .page hr {
-  margin: 28px 0;
+  margin: 18px 0;
 }
 
 /* Lists */
 .page ul,
 .page ol {
-  margin: 12px 0 20px 24px;
+  margin: 10px 0 18px 22px;
 }
 
 .page li {
-  margin-bottom: 8px;
-  line-height: 1.7;
+  margin-bottom: 6px;
+  line-height: 1.6;
 }
