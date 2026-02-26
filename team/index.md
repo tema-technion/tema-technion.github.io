@@ -20,5 +20,5 @@ permalink: /team/
 
 <div class="page-nav">
   <span></span>
-  <a class="btn btn-secondary" href="/team/">Next →</a>
+   <a class="btn btn-secondary nav-prev" href="{{ '/team/' | relative_url }}">← Previous</a>
 </div>
