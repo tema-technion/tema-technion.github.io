@@ -36,7 +36,7 @@
     </div>
   </header>
 
-<main class="page">
+<main class="page {% if page.url == '/' %}home{% else %}inner{% endif %}">
   {{ content }}
 </main>
 
