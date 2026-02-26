@@ -595,21 +595,22 @@ a:hover{ text-decoration: none; }
 
 .page.inner .team-page .team-name{
   margin: 0 0 6px 0;
-  font-size: 24px;
-  font-weight: 750;
-  letter-spacing: -0.03em;
+  font-size: 22px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
   color: var(--ink-900);
+  line-height: 1.15;
 }
 
 .page.inner .team-page .team-focus{
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 650;
   color: var(--ink-900);
 }
 
 .page.inner .team-page .team-meta{
-  margin: 0 0 12px 0;
+  margin: 0 0 8px 0;
   font-size: 12px;
   color: var(--ink-700);
 }
@@ -624,10 +625,10 @@ a:hover{ text-decoration: none; }
 
 .page.inner .team-page .team-description{
   margin: 0;
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 14px;
+  line-height: 1.1;
   color: var(--ink-700);
-  max-width: 68ch;
+  max-width: 85ch;
 }
 
 @media (max-width: 900px){
