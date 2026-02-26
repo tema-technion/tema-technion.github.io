@@ -5,7 +5,9 @@ permalink: /team/
 ---
 # Team
 
-<div class="profile-grid">
+<section class="profile">
+
+  <div class="profile-grid">
 
     <div class="profile-photo-col">
       <img src="{{ '/assets/img/sigal.jpg' | relative_url }}"
