@@ -6,8 +6,7 @@ permalink: /how-we-think/
 
 # How we think
 
-We study how real people make mobility decisions, how systems and AI represent those decisions, and where the two are misaligned.
-At TEMA we conceptualize mobility as a decision loop between humans, systems, and algorithms.
+At TEMA we study how real people make mobility decisions, how systems and AI represent those decisions, and where the two align.
 
 Travelers operate with bounded motivations and decision rules.  
 Their choices generate outcomes in networks and services.  
