@@ -19,6 +19,5 @@ permalink: /team/members/
 …team members…
 
 <div class="page-nav">
-  <span></span>
-   <a class="btn btn-secondary nav-prev" href="{{ '/team/' | relative_url }}">← Previous</a>
+  <a class="btn btn-secondary nav-prev" href="{{ '/team/' | relative_url }}">← Previous</a>
 </div>
