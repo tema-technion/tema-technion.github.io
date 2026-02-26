@@ -80,3 +80,8 @@ We study how these interaction patterns evolve, how collaboration modes (delegat
 We apply this decision-systems perspective across smart mobility, public transport, active travel, safety, and sustainable development using data-driven, spatial, behavioral, and human–machine interaction approaches.
 
 Our goal is to build models and tools that are behaviorally realistic and policy-relevant — supporting voluntary change, safer and greener mobility, and more transparent, adaptive decision support for agencies and operators.
+
+<div class="page-nav">
+  <a class="btn btn-secondary" href="/how-we-think/">← Previous</a>
+  <a class="btn btn-primary" href="/how-we-think-3/">Next →</a>
+</div>
