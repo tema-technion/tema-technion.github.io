@@ -461,6 +461,7 @@ a:hover{ text-decoration: none; }
   font-size: 20px;
   line-height: 1.1;
   margin: 12px 0 6px 0;   /* more air above sections */
+  color: var(--blue-lab);
 }
 
 /* Subsection */
