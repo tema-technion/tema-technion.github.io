@@ -8,8 +8,7 @@ permalink: /team/
   <div class="team-hero-text">
     <h1 class="team-title">Team</h1>
     <h2 class="team-name">Sigal Kaplan</h2>
-    <div class="team-role">Decision-systems scholar for smart mobility</div>
-    <div class="team-affil">Associate Professor, Faculty of Civil and Environmental Engineering, Technion</div>
+    <div class="team-affil">Associate Professor</div>
   </div>
 
   <img class="team-photo"
