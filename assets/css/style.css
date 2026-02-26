@@ -613,8 +613,14 @@ a:hover{ text-decoration: none; }
 }
 
 .team-page .team-meta a{
-  color: var(--blue-cta);
+  color: var(--ink-600);   /* muted grey-blue */
   text-decoration: none;
+  font-weight: 500;
+}
+
+.team-page .team-meta a:hover{
+  color: var(--blue-cta);  /* only turns blue on hover */
+  text-decoration: underline;
 }
 
 .team-page .team-description{
