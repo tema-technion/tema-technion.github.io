@@ -16,7 +16,7 @@ permalink: /team/
     </div>
 
     <div class="profile-text-col">
-      <h3 class="profile-name">Sigal Kaplan</h3>
+      <h2 class="profile-name">Sigal Kaplan</h2>
       <div class="profile-role">Smart mobility and decision-systems</div>
       <div class="profile-affil">Associate Professor</div>
     </div>
