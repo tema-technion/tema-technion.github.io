@@ -16,6 +16,7 @@ permalink: /team/
   </div>
 
 </div>
+
 ### About
 
 In smart, data-intensive, and technologically advanced transportation systems, the main challenge remains a better representation of human choice processes, behavioral patterns, and technology–human interfaces. My work addresses this from a decision-systems perspective: I study how real people make mobility decisions—with bounded attention, spatial memory, emotions, and habits — and how those decisions are encoded in models, data systems, and AI tools. Substantively, my research spans route and mode choice, transfers and hubs, safety and risk, adoption of vehicle and information technologies, and decision-support and policy processes. The overarching aim is to align models and DSS with human behavior and experience so that policies can support voluntary change, safer systems, and greener everyday travel.
