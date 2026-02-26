@@ -493,15 +493,17 @@ a:hover{ text-decoration: none; }
 /* =========================
    INNER PAGE NAVIGATION
    ========================= */
-
 .page.inner .page-nav{
   display:flex;
-  gap: 12px;
+  align-items:center;
   margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid rgba(37,55,78,0.08);
 }
 
-.page.inner .page-nav a:first-child{
-  margin-right: auto;
+/* Always push Next to the right */
+.page.inner .page-nav .nav-next{
+  margin-left: auto;
 }
+
+/* Previous naturally stays left */
