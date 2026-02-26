@@ -489,3 +489,16 @@ a:hover{ text-decoration: none; }
   margin-bottom: 4px;
   line-height: 1.5;
 }
+
+/* =========================
+   INNER PAGE NAVIGATION
+   ========================= */
+
+.page.inner .page-nav{
+  display:flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(37,55,78,0.08);
+}
