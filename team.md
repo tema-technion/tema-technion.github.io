@@ -8,15 +8,17 @@ permalink: /team/
 
 ## Sigal Kaplan
 
-<div class="profile-header">
-  <img class="profile-photo"
+<div class="team-hero">
+  <div class="team-hero-text">
+    <h1 class="team-title">Team</h1>
+    <h2 class="team-name">Sigal Kaplan</h2>
+    <div class="team-role">Decision-systems scholar for smart mobility</div>
+    <div class="team-affil">Associate Professor, Faculty of Civil and Environmental Engineering, Technion</div>
+  </div>
+
+  <img class="team-photo"
        src="{{ '/assets/img/sigal.jpg' | relative_url }}"
        alt="Sigal Kaplan">
-
-  <div class="profile-meta">
-    <div class="profile-role">Decision-systems scholar for smart mobility</div>
-    <div class="profile-affil">Associate Professor, Faculty of Civil and Environmental Engineering, Technion</div>
-  </div>
 </div>
 
 ### About
