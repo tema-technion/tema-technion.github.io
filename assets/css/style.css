@@ -496,7 +496,7 @@ a:hover{ text-decoration: none; }
 
 .page.inner .page-nav{
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 12px;
   margin-top: 40px;
   padding-top: 20px;
