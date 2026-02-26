@@ -24,7 +24,7 @@ permalink: /team/members/
  <article class="team-member">
   <img class="team-photo" src="/assets/img/team/yashar.jpg" alt="Idan Yashar" loading="lazy">
   <div class="team-content">
-    <h2 class="team-name">Tom Vinitski</h2>
+    <h2 class="team-name">Idan Yashar</h2>
     <div class="team-focus">Public transport · Behavioral decision rules</div>
     <div class="team-meta">
       <a href="mailto:idan.yashar@campus.technion.ac.il">idan.yashar@campus.technion.ac.il</a><br>
