@@ -5,16 +5,14 @@ permalink: /team/
 ---
 
 <div class="profile-header">
-
   <img class="profile-photo"
        src="{{ '/assets/img/sigal.jpg' | relative_url }}"
        alt="Sigal Kaplan">
 
   <div class="profile-meta">
-    <div class="profile-role">Smart mobility and decision-systems </div>
+    <div class="profile-role">Smart mobility and decision-systems</div>
     <div class="profile-affil">Associate Professor</div>
   </div>
-
 </div>
 
 ### About
