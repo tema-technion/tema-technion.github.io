@@ -3,6 +3,9 @@ layout: default
 title: Team
 permalink: /team/
 ---
+# Team
+
+## Sigal kaplan
 
 <div class="profile-header">
   <img class="profile-photo"
