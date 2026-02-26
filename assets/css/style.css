@@ -542,15 +542,56 @@ a:hover{ text-decoration: none; }
   border-bottom: 1px solid rgba(37,55,78,0.08);
 }
 
-/* Photo */
-.page.inner .profile-photo{
-  width: 132px;
-  height: 132px;
+/* Force clean alignment for profile header */
+.page.inner .profile-header{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 22px;
+  align-items: start;
+  margin: 12px 0 18px;
+  padding: 14px 0 18px;
+  border-bottom: 1px solid rgba(37,55,78,0.08);
+}
+
+/* Make the <img> behave like a block, not inline */
+.page.inner img.profile-photo{
+  display: block;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 14px;
-  border: 1px solid rgba(37,55,78,0.12);
-  box-shadow: 0 10px 18px rgba(37,55,78,0.10);
-  flex: 0 0 auto;
+  border-radius: 16px;
+  border: 1px solid rgba(37,55,78,0.10);
+  box-shadow: 0 10px 18px rgba(37,55,78,0.08);
+}
+
+/* Meta aligns nicely next to the photo */
+.page.inner .profile-meta{
+  margin-top: 4px;
+}
+
+.page.inner .profile-role{
+  font-weight: 750;
+  color: var(--ink-900);
+  margin: 0 0 6px 0;
+}
+
+.page.inner .profile-affil{
+  color: var(--ink-600);
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Mobile: stack */
+@media (max-width: 720px){
+  .page.inner .profile-header{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .page.inner img.profile-photo{
+    width: 112px;
+    height: 112px;
+  }
 }
 
 /* Meta text (role + affiliation) */
