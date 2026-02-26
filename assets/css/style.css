@@ -432,51 +432,51 @@ a:hover{ text-decoration: none; }
    ====================================== */
 
 .page {
-  max-width: 880px;     /* key: prevents long unreadable lines */
+  max-width: 760px;     /* key: prevents long unreadable lines */
   margin: 0 auto;
-  padding: 32px 22px;
+  padding: 24px 20px;
 }
 
 /* Paragraph rhythm */
 .page p {
-  font-size: 17px;
-  line-height: 1.65;
-  margin: 0 0 14px 0;
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0 0 10px 0;
 }
 
 /* Main title */
 .page h1 {
-  font-size: 38px;
-  line-height: 1.12;
-  margin: 0 0 14px 0;
+  font-size: 32px;
+  line-height: 1.1;
+  margin: 0 0 12px 0;
 }
 
 /* Major section */
 .page h2 {
-  font-size: 26px;
-  line-height: 1.12;
-  margin: 28px 0 10px 0;   /* more air above sections */
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 20px 0 8px 0;   /* more air above sections */
 }
 
 /* Subsection */
 .page h3 {
-  font-size: 19px;
-  line-height: 1.25;
-  margin: 16px 0 8px 0;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 14px 0 6px 0;
 }
 
 /* Reduce separator heaviness */
 .page hr {
-  margin: 18px 0;
+  margin: 14px 0;
 }
 
 /* Lists */
 .page ul,
 .page ol {
-  margin: 10px 0 18px 22px;
+  margin: 6px 0 14px 18px;
 }
 
 .page li {
-  margin-bottom: 6px;
-  line-height: 1.6;
+  margin-bottom: 4px;
+  line-height: 1.5;
 }
