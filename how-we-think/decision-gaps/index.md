@@ -45,6 +45,5 @@ Our goal is to build models and tools that are behaviorally realistic and policy
 ---
 
 <div class="page-nav">
-  <a class="btn btn-secondary" href="/how-we-think/">← Previous</a>
-  <span></span>
+  <a class="btn btn-secondary nav-prev" href="...">← Previous</a>
 </div>
