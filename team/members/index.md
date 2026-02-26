@@ -8,100 +8,59 @@ permalink: /team/members/
 
 <section class="team-page">
 
-  <article class="team-member">
-    <img class="team-photo" src="/assets/img/team/vinitzki.jpg" alt="Tom Vinitski" loading="lazy">
-
-    <div class="team-content">
-      <h2 class="team-name">Omer D.</h2>
-
-      <div class="team-focus">
-        Public transport · Behavioral decision rules
-      </div>
-
-      <div class="team-meta">
-        <a href="mailto:tom.vinitski@campus.technion.ac.il">vinitski@campus.technion.ac.il</a><br>
-        Technion – TEMA Lab
-      </div>
-
-      <p class="team-description">
-        Studies mobility cessation and public transport retention,
-        linking health, experience, and behavioral decision rules
-        to long-term mode use.
-      </p>
+<article class="team-member">
+  <img class="team-photo" src="/assets/img/team/vinitzki.jpg" alt="Tom Vinitski" loading="lazy">
+  <div class="team-content">
+    <h2 class="team-name">Tom Vinitski</h2>
+    <div class="team-focus">Public transport · Behavioral decision rules</div>
+    <div class="team-meta">
+      <a href="mailto:tom.vinitski@campus.technion.ac.il">tom.vinitski@campus.technion.ac.il</a><br>
+      Technion – TEMA Lab
     </div>
-  </article>
+    <p class="team-description">…</p>
+  </div>
+</article>
 
 
  <article class="team-member">
-    <img class="team-photo" src="/assets/img/team/yashar.jpg" alt="Idan Yashar" loading="lazy">
-
-    <div class="team-content">
-      <h2 class="team-name">Idan Yashar</h2>
-
-      <div class="team-focus">
-        Public transport · Behavioral decision rules
-      </div>
-
-      <div class="team-meta">
-        <a href="mailto:idan.yashar@campus.technion.ac.il">idan.yashar@campus.technion.ac.il</a><br>
-        Technion – TEMA Lab
-      </div>
-
-      <p class="team-description">
-        Studies mobility cessation and public transport retention,
-        linking health, experience, and behavioral decision rules
-        to long-term mode use.
-      </p>
+  <img class="team-photo" src="/assets/img/team/yashar.jpg" alt=Idan Yashar" loading="lazy">
+  <div class="team-content">
+    <h2 class="team-name">Tom Vinitski</h2>
+    <div class="team-focus">Public transport · Behavioral decision rules</div>
+    <div class="team-meta">
+      <a href="mailto:idan.yashar@campus.technion.ac.il">idan.yashar@campus.technion.ac.il</a><br>
+      Technion – TEMA Lab
     </div>
-  </article>
+    <p class="team-description">…</p>
+  </div>
+</article>
 
  <article class="team-member">
-    <img class="team-photo" src="/assets/img/team/mekonen.jpg" alt="Mekonen Hailu" loading="lazy">
-
-    <div class="team-content">
-      <h2 class="team-name">Mekonen Hailu </h2>
-
-      <div class="team-focus">
-        Traffic safety · Safe systems
-      </div>
-
-      <div class="team-meta">
-        <a href="mailto:mekonenhailu@campus.technion.ac.il">mekonenhailu@campus.technion.ac.il</a><br>
-        Technion – TEMA Lab
-      </div>
-
-      <p class="team-description">
-        Studies mobility cessation and public transport retention,
-        linking health, experience, and behavioral decision rules
-        to long-term mode use.
-      </p>
+  <img class="team-photo" src="/assets/img/team/mekonen.jpg" alt="Mekonen Hailu" loading="lazy">
+  <div class="team-content">
+    <h2 class="team-name">Mekonen Hailu</h2>
+    <div class="team-focus">Traffic safety · Safe Systems</div>
+    <div class="team-meta">
+      <a href="mailto:mekonenhailu@campus.technion.ac.il">mekonenhailu@campus.technion.ac.il</a><br>
+      Technion – TEMA Lab
     </div>
-  </article>
+    <p class="team-description">…</p>
+  </div>
+</article>
 
 
- <article class="team-member">
-    <img class="team-photo" src="/assets/img/team/Tellawi.jpg" alt="Talla Tellawi" loading="lazy">
-
-    <div class="team-content">
-      <h2 class="team-name">Tala Tellawi</h2>
-
-      <div class="team-focus">
-        Public transport · Behavioral decision rules
-      </div>
-
-      <div class="team-meta">
-        <a href="mailto:talla.tellawi@campus.technion.ac.il">talla.tellawi@campus.technion.ac.il</a><br>
-        Technion – TEMA Lab
-      </div>
-
-      <p class="team-description">
-        Studies mobility cessation and public transport retention,
-        linking health, experience, and behavioral decision rules
-        to long-term mode use.
-      </p>
+<article class="team-member">
+  <img class="team-photo" src="/assets/img/team/tellawi.jpg" alt="Tala Tellawi" loading="lazy">
+  <div class="team-content">
+    <h2 class="team-name">Tala Tellawi</h2>
+    <div class="team-focus">Public transport · Behavioral decision rules</div>
+    <div class="team-meta">
+      <a href="mailto:tala.tellawi@campus.technion.ac.il">tala.tellawi@campus.technion.ac.il</a><br>
+      Technion – TEMA Lab
     </div>
-  </article>
-
+    <p class="team-description">…</p>
+  </div>
+</article>
   
 
 </section>
