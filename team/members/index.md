@@ -9,7 +9,7 @@ permalink: /team/members/
 <section class="team-page">
 
 <article class="team-member">
-  <img class="team-photo" src="/assets/img/team/vinitzki.jpg" alt="Tom Vinitski" loading="lazy">
+  <img class="team-photo" src="/assets/img/team/vinitski.jpg" alt="Tom Vinitski" loading="lazy">
   <div class="team-content">
     <h2 class="team-name">Tom Vinitski</h2>
     <div class="team-focus">Public transport · Behavioral decision rules</div>
