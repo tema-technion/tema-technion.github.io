@@ -399,35 +399,35 @@ a:hover{ text-decoration: none; }
    Uses only the site color variables
    ====================================== */
 
-.page h1{
+.page.inner h1{
   color: var(--ink-900);
 }
-.page h2 {
+.page.inner h2 {
    color: var(--ink-900);
 }
 
-.page h3 {
+.page.inner h3 {
   color: var(--ink-700);
 }
 
-.page p,
-.page li {
+.page.inner p,
+.page.inner li {
   color: var(--ink-700);
 }
 
 /* Links match homepage accent language */
-.page p a,
-.page li a {
+.page.inner p a,
+.page.inner li a {
   color: var(--blue-cta);
 }
 
-.page p a:hover,
-.page li a:hover {
+.page.inner p a:hover,
+.page.inner li a:hover {
   color: var(--blue-lab);
 }
 
 /* Optional: make separators consistent */
-.page hr {
+.page.inner hr {
   border: 0;
   height: 1px;
   background: rgba(37, 55, 78, 0.12); /* derived from ink-900 */
@@ -436,21 +436,21 @@ a:hover{ text-decoration: none; }
    INNER PAGE TYPOGRAPHY & SPACING SYSTEM
    ====================================== */
 
-.page {
+.page.inner {
   max-width: 760px;     /* key: prevents long unreadable lines */
   margin: 0 auto;
   padding: 22px 20px;
 }
 
 /* Paragraph rhythm */
-.page p {
+.page.inner p {
   font-size: 16px;
   line-height: 1.5;
   margin: 0 0 10px 0;
 }
 
 
-.page h1{
+.page.inner h1{
   font-size: 34px;           /* smaller than hero (56px) */
   font-weight: 550;          /* same as hero */
   letter-spacing: -0.04em;   /* same tight tracking */
@@ -459,7 +459,7 @@ a:hover{ text-decoration: none; }
 }
 
 /* Major section */
-.page h2 {
+.page.inner h2 {
   font-size: 24px;
   line-height: 1.1;
   margin: 12px 0 6px 0;   /* more air above sections */
@@ -467,7 +467,7 @@ a:hover{ text-decoration: none; }
 }
 
 /* Subsection */
-.page h3 {
+.page.inner h3 {
   font-size: 18px;
   line-height: 1.1;
   margin: 12px 0 6px 0;
@@ -475,17 +475,17 @@ a:hover{ text-decoration: none; }
 }
 
 /* Reduce separator heaviness */
-.page hr {
+.page.inner hr {
   margin: 14px 0;
 }
 
 /* Lists */
-.page ul,
-.page ol {
+.page.inner ul,
+.page.inner ol {
   margin: 6px 0 12px 18px;
 }
 
-.page li {
+.page.inner li {
   margin-bottom: 4px;
   line-height: 1.5;
 }
