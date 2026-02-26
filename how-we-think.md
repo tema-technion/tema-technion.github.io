@@ -43,5 +43,5 @@ A recurring challenge is how to represent these experiential dimensions in model
 
 
 <div class="page-nav">
- <a class="btn btn-primary" href="{{ '/how-we-think/decision-gaps/' | relative_url }}">Next →</a>
+  <a class="btn btn-primary nav-next" href="...">Next →</a>
 </div>
