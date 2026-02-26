@@ -444,11 +444,13 @@ a:hover{ text-decoration: none; }
   margin: 0 0 10px 0;
 }
 
-/* Main title */
-.page h1 {
-  font-size: 28px;
+
+.page h1{
+  font-size: 34px;           /* smaller than hero (56px) */
+  font-weight: 550;          /* same as hero */
+  letter-spacing: -0.04em;   /* same tight tracking */
   line-height: 1.1;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
 }
 
 /* Major section */
