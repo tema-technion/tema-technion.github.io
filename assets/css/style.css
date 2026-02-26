@@ -575,3 +575,64 @@ a:hover{ text-decoration: none; }
     font-size: 28px;
   }
 }
+/* team members */
+.team-page .team-member{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(37, 55, 78, 0.12);
+}
+
+.team-page .team-photo{
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.team-page .team-name{
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  color: var(--ink-900);
+}
+
+.team-page .team-focus{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--ink-900);
+}
+
+.team-page .team-meta{
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.team-page .team-meta a{
+  color: var(--blue-cta);
+  text-decoration: none;
+}
+
+.team-page .team-description{
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink-900);
+  max-width: 72ch;
+}
+
+@media (max-width: 900px){
+  .team-page .team-member{
+    grid-template-columns: 160px 1fr;
+  }
+  .team-page .team-photo{
+    width: 160px;
+    height: 160px;
+  }
+  .team-page .team-name{
+    font-size: 26px;
+  }
+}
