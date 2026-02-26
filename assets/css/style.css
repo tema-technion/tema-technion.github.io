@@ -507,3 +507,139 @@ a:hover{ text-decoration: none; }
 }
 
 /* Previous naturally stays left */
+/* =========================
+   TEAM PAGE
+   ========================= */
+
+/* Optional: tighten Team page top spacing a bit */
+.page.inner.team-page{
+  padding-top: 26px;
+}
+
+/* Profile block: keeps things “paper-like” (no heavy card) */
+.page.inner .profile{
+  margin-top: 18px;
+  padding-top: 6px;
+}
+
+/* Name (H2) — make it feel like a section title, not huge */
+.page.inner .profile h2,
+.page.inner h2.profile-name{
+  font-size: 28px;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  margin: 0 0 10px 0;
+  color: var(--ink-900);
+}
+
+/* Header row: photo + meta */
+.page.inner .profile-header{
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin: 10px 0 18px 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(37,55,78,0.08);
+}
+
+/* Photo */
+.page.inner .profile-photo{
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(37,55,78,0.12);
+  box-shadow: 0 10px 18px rgba(37,55,78,0.10);
+  flex: 0 0 auto;
+}
+
+/* Meta text (role + affiliation) */
+.page.inner .profile-meta{
+  flex: 1;
+  min-width: 0;
+  color: var(--ink-700);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+/* If you split into two lines with spans/divs */
+.page.inner .profile-role{
+  font-weight: 650;
+  color: var(--ink-700);
+  margin-bottom: 6px;
+}
+
+.page.inner .profile-affil{
+  color: var(--ink-600);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Section headings (H3) inside the profile */
+.page.inner .profile h3{
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink-900);
+  margin: 16px 0 8px 0;
+}
+
+/* Paragraph rhythm inside profile */
+.page.inner .profile p{
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink-700);
+  margin: 0 0 10px 0;
+}
+
+/* Lists inside profile */
+.page.inner .profile ul,
+.page.inner .profile ol{
+  margin: 6px 0 12px 18px;
+}
+
+.page.inner .profile li{
+  margin-bottom: 4px;
+  line-height: 1.5;
+  color: var(--ink-700);
+}
+
+/* Optional: subtle “section divider” for long bios */
+.page.inner .profile .profile-divider{
+  margin: 18px 0;
+  height: 1px;
+  background: rgba(37,55,78,0.08);
+  border: 0;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 720px){
+  .page.inner .profile-header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .page.inner .profile-photo{
+    width: 108px;
+    height: 108px;
+    border-radius: 14px;
+  }
+
+  .page.inner .profile h2,
+  .page.inner h2.profile-name{
+    font-size: 24px;
+  }
+
+  .page.inner .profile-meta{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 520px){
+  .page.inner .profile p{
+    font-size: 15.5px;
+  }
+}
