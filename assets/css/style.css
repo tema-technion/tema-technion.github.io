@@ -414,10 +414,13 @@ a:hover{ text-decoration: none; }
 }
 
 /* Links match homepage accent language */
-.page a {
+.page p a,
+.page li a {
   color: var(--blue-cta);
 }
-.page a:hover {
+
+.page p a:hover,
+.page li a:hover {
   color: var(--blue-lab);
 }
 
