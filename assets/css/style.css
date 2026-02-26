@@ -575,70 +575,72 @@ a:hover{ text-decoration: none; }
     font-size: 28px;
   }
 }
-/* team members */
-.team-page .team-member{
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 32px;
-  padding: 40px 0;
-  border-bottom: 1px solid rgba(37, 55, 78, 0.12);
+/* ===== TEAM MEMBERS PAGE (final override) ===== */
+.page.inner .team-page .team-member{
+  display:grid;
+  grid-template-columns: 180px 1fr;
+  gap: 28px;
+  padding: 26px 0;
+  border-bottom: 1px solid rgba(37,55,78,0.12);
+  align-items: center;
 }
 
-.team-page .team-photo{
-  width: 220px;
-  height: 220px;
+.page.inner .team-page .team-photo{
+  width: 180px;
+  height: 180px;
+  border-radius: 18px;
   object-fit: cover;
-  border-radius: 20px;
-  background: #fff;
+  display:block;
 }
 
-.team-page .team-name{
-  margin: 0 0 8px;
-  font-size: 34px;
-  font-weight: 650;
+.page.inner .team-page .team-name{
+  margin: 0 0 6px 0;
+  font-size: 30px;
+  font-weight: 750;
   letter-spacing: -0.03em;
   color: var(--ink-900);
 }
 
-.team-page .team-focus{
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 14px;
+.page.inner .team-page .team-focus{
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 700;
   color: var(--ink-900);
 }
 
-.team-page .team-meta{
+.page.inner .team-page .team-meta{
+  margin: 0 0 12px 0;
   font-size: 15px;
-  margin-bottom: 16px;
+  color: var(--ink-700);
 }
 
-.team-page .team-meta a{
-  color: var(--ink-600);   /* muted grey-blue */
+.page.inner .team-page .team-meta a{
+  color: inherit;          /* uses your existing palette */
   text-decoration: none;
-  font-weight: 500;
 }
-
-.team-page .team-meta a:hover{
-  color: var(--blue-cta);  /* only turns blue on hover */
+.page.inner .team-page .team-meta a:hover{
   text-decoration: underline;
 }
 
-.team-page .team-description{
-  font-size: 17px;
-  line-height: 1.65;
-  color: var(--ink-900);
-  max-width: 72ch;
+.page.inner .team-page .team-description{
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink-700);
+  max-width: 68ch;
 }
 
 @media (max-width: 900px){
-  .team-page .team-member{
-    grid-template-columns: 160px 1fr;
+  .page.inner .team-page .team-member{
+    grid-template-columns: 140px 1fr;
+    gap: 18px;
+    padding: 22px 0;
   }
-  .team-page .team-photo{
-    width: 160px;
-    height: 160px;
+  .page.inner .team-page .team-photo{
+    width: 140px;
+    height: 140px;
   }
-  .team-page .team-name{
-    font-size: 26px;
+  .page.inner .team-page .team-name{
+    font-size: 24px;
   }
 }
