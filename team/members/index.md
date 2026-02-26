@@ -9,7 +9,7 @@ permalink: /team/members/
 <section class="team-page">
 
   <article class="team-member">
-    <img class="team-photo" src="/assets/img/team/tomvinitzki.jpg" alt="Tom Vinitski" loading="lazy">
+    <img class="team-photo" src="/assets/img/team/vinitzki.jpg" alt="Tom Vinitski" loading="lazy">
 
     <div class="team-content">
       <h2 class="team-name">Omer D.</h2>
@@ -80,7 +80,7 @@ permalink: /team/members/
 
 
  <article class="team-member">
-    <img class="team-photo" src="/assets/img/team/Tala.jpg" alt="Talla Tellawi" loading="lazy">
+    <img class="team-photo" src="/assets/img/team/Tellawi.jpg" alt="Talla Tellawi" loading="lazy">
 
     <div class="team-content">
       <h2 class="team-name">Tala Tellawi</h2>
