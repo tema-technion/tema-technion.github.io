@@ -42,5 +42,5 @@ Before joining the Technion, I was a faculty member at the Technical University 
 I serve on the editorial boards of Transportation, Transportation Research Part D, and in international evaluation activities such as ERC review panels and large European research programs. I collaborate with Israel’s Central Bureau of Statistics (CBS), the National Road Safety Authority, Ayalon Highways and the Trans-Israel Planning Division, anchoring the lab at the interface of decision-systems research and practice. 
 
 <div class="page-nav">
-  <a class="btn btn-primary nav-next" href="{{ '/team/' | relative_url }}">Next →</a>
+  <a class="btn btn-primary nav-next" href="{{ '/team/members' | relative_url }}">Next →</a>
 </div>
