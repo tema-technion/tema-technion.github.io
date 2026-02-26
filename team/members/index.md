@@ -14,7 +14,7 @@ permalink: /team/members/
     <h2 class="team-name">Tom Vinitski</h2>
     <div class="team-focus">Public transport · Behavioral decision rules</div>
     <div class="team-meta">
-      <a href="mailto:tom.vinitski@campus.technion.ac.il">tom.vinitski@campus.technion.ac.il</a><br>
+      <a href="mailto:tom.vinitski@campus.technion.ac.il">tom.vinitski@campus.technion.ac.il</a>
     </div>
     <p class="team-description">…</p>
   </div>
@@ -27,7 +27,7 @@ permalink: /team/members/
     <h2 class="team-name">Idan Yashar</h2>
     <div class="team-focus">Public transport · Behavioral decision rules</div>
     <div class="team-meta">
-      <a href="mailto:idan.yashar@campus.technion.ac.il">idan.yashar@campus.technion.ac.il</a><br>
+      <a href="mailto:idan.yashar@campus.technion.ac.il">idan.yashar@campus.technion.ac.il</a>
     </div>
     <p class="team-description">…</p>
   </div>
@@ -39,7 +39,7 @@ permalink: /team/members/
     <h2 class="team-name">Mekonen Hailu</h2>
     <div class="team-focus">Traffic safety · Safe Systems</div>
     <div class="team-meta">
-      <a href="mailto:mekonenhailu@campus.technion.ac.il">mekonenhailu@campus.technion.ac.il</a><br>
+      <a href="mailto:mekonenhailu@campus.technion.ac.il">mekonenhailu@campus.technion.ac.il</a>
     </div>
     <p class="team-description">…</p>
   </div>
@@ -52,7 +52,7 @@ permalink: /team/members/
     <h2 class="team-name">Tala Tellawi</h2>
     <div class="team-focus">Public transport · Behavioral decision rules</div>
     <div class="team-meta">
-      <a href="mailto:tala.tellawi@campus.technion.ac.il">tala.tellawi@campus.technion.ac.il</a><br>
+      <a href="mailto:tala.tellawi@campus.technion.ac.il">tala.tellawi@campus.technion.ac.il</a>
     </div>
     <p class="team-description">…</p>
   </div>
