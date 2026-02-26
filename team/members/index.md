@@ -4,7 +4,7 @@ title: Team members
 permalink: /team/members/
 ---
 
-## Team members
+# Team members
 
 ### Tom Vinitzki
 …team members…
