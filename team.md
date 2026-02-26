@@ -4,10 +4,6 @@ title: Team
 permalink: /team/
 ---
 
-# Team
-
-## Sigal Kaplan
-
 <div class="team-hero">
   <div class="team-hero-text">
     <h1 class="team-title">Team</h1>
