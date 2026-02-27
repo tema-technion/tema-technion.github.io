@@ -645,37 +645,3 @@ a:hover{ text-decoration: none; }
     font-size: 24px;
   }
 }
-/* =========================
-   Research PAGE
-   ========================= */
-
-.research-page{
-  max-width: 860px;
-}
-
-.research-intro{
-  font-size: 17px;
-  line-height: 1.7;
-  margin-bottom: 32px;
-}
-
-.research-theme{
-  margin-bottom: 36px;
-}
-
-.research-theme h2{
-  font-size: 22px;
-  margin-bottom: 10px;
-  letter-spacing: -0.02em;
-}
-
-.research-theme p{
-  font-size: 15px;
-  line-height: 1.65;
-  max-width: 75ch;
-}
-
-.research-link{
-  margin-top: 40px;
-  font-weight: 600;
-}
