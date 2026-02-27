@@ -1,9 +1,10 @@
 ---
+layout: default
 title: Research
 permalink: /research/
 ---
 
-<section class="research-page">
+<div class="page inner">
 
   <h1>What do we study?</h1>
 
@@ -76,4 +77,4 @@ permalink: /research/
     <a href="/how-we-think/">Curious about our decision-systems framework? → How we think</a>
   </div>
 
-</section>
+</div>
