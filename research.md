@@ -6,7 +6,7 @@ permalink: /research/
 
 <div class="page inner">
 
-  <h1>What do we study?</h1>
+  <h2>What do we study?</h2>
 
   <p class="research-intro">
     At TEMA we study how people move through cities, how systems respond,
@@ -16,7 +16,7 @@ permalink: /research/
   </p>
 
   <div class="research-theme">
-    <h2>Green and active mobility</h2>
+    <h3>Green and active mobility</h3>
     <p>
       Walking, cycling, and micromobility as mode and route choices. We study what
       motivates green mobility mode, route, and distance decisions; how socio-ecological
@@ -27,7 +27,7 @@ permalink: /research/
   </div>
 
   <div class="research-theme">
-    <h2>Digital mobility and vehicle technology</h2>
+    <h3>Digital mobility and vehicle technology</h3>
     <p>
       We model intentions and adoption of EV/HEV, ADAS, multimodal apps and MaaS,
       use data analytics to study EV and ADAS uptake and use, examine the effects
@@ -37,7 +37,7 @@ permalink: /research/
   </div>
 
   <div class="research-theme">
-    <h2>Public transport and transfer experience</h2>
+    <h3>Public transport and transfer experience</h3>
     <p>
       We investigate public transport use and service climate, passenger satisfaction,
       safety and equity, and responses to disruptions. Using surveys, operational and
@@ -47,7 +47,7 @@ permalink: /research/
   </div>
 
   <div class="research-theme">
-    <h2>Safety, risk, and resilience</h2>
+    <h3>Safety, risk, and resilience</h3>
     <p>
       We model crash occurrence and injury severity across modes, evaluate Safe Systems
       infrastructure, and study safety perceptions and interactions between drivers,
@@ -56,7 +56,7 @@ permalink: /research/
   </div>
 
   <div class="research-theme">
-    <h2>Policy design and decision support</h2>
+    <h3>Policy design and decision support</h3>
     <p>
       We develop tools connecting behavioral models with planning and policy,
       design bounded-rational scenario processes, apply MCDA, and analyze
@@ -65,7 +65,7 @@ permalink: /research/
   </div>
 
   <div class="research-theme">
-    <h2>Data-driven and smart-systems methods</h2>
+    <h3>Data-driven and smart-systems methods</h3>
     <p>
       Across topics, we use large-scale analytics, complaint mining,
       smart-system logs and spatial point-process models for safety and
