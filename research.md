@@ -6,8 +6,9 @@ permalink: /research/
 
 <div class="page inner">
 
+  <h1>Research</h1>
   <h2>What do we study?</h2>
-
+  
   <p class="research-intro">
     At TEMA we study how people move through cities, how systems respond,
     and how data and models can help redesign mobility. Our work spans
