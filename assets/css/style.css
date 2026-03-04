@@ -575,6 +575,22 @@ a:hover{ text-decoration: none; }
     font-size: 28px;
   }
 }
+/* LINKS (Google Scholar · ORCID · Contact) */
+.page.inner .profile-links{
+  margin-top: 8px;
+  font-size: 15px;        /* slightly smaller than role */
+  color: var(--ink-700);
+}
+
+.page.inner .profile-links a{
+  color: var(--ink-700);  /* avoid bright blue */
+  text-decoration: none;
+}
+
+.page.inner .profile-links a:hover{
+  text-decoration: underline;
+}
+
 /* ===== TEAM MEMBERS PAGE (final override) ===== */
 .page.inner .team-page .team-member{
   display:grid;
