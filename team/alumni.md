@@ -5,21 +5,23 @@ permalink: /team/alumni/
 class: inner
 ---
 
+# Selected Alumni
+
 Across three institutions I have supervised more than 30 graduate students from around 15 countries.  
 Below are selected alumni currently holding key roles in academia, industry, and public agencies.
 
-## Academia
+### Academia
 
 Name — Assistant Professor, University X  
 Name — Researcher, Institute Y  
 Name — Postdoctoral Fellow, University Z  
 
-## Public Sector
+### Public Sector
 
 Name — Transport planner, City of X  
 Name — Analyst, National Road Safety Authority  
 
-## Industry
+### Industry
 
 Name — Data Scientist, Mobility Analytics Company  
 Name — Transport Consultant, Engineering Firm  
