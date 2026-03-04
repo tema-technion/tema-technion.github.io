@@ -19,6 +19,13 @@ permalink: /team/
       <h2 class="profile-name">Sigal Kaplan</h2>
       <div class="profile-role">Smart mobility and decision-systems</div>
       <div class="profile-affil">Associate Professor</div>
+      <div class="profile-links">
+      <a href="https://scholar.google.com/citations?user=T__4BSYAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      ·
+      <a href="https://orcid.org/0000-0002-3352-8480" target="_blank" rel="noopener">ORCID</a>
+      ·
+      <a href="mailto:skaplan@technion.ac.il">Contact</a>
+      </div>
     </div>
 
   </div>
