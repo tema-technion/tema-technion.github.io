@@ -42,7 +42,7 @@ Students in TEMA typically work at the interface of behavior, data, and decision
 
 ### Background and supervision
 
-Before joining the Technion, I was a faculty member at the Technical University of Denmark (DTU) and at the Hebrew University of Jerusalem. I have held visiting positions as an Eleonore Trefftz guest professor at TU Dresden and as an AIANI Fellow at the University of Innsbruck, and I am an external collaborator with the TRANSyT Transportation Research Center at Universidad Politécnica de Madrid. Across three institutions, I have supervised more than 30 graduate students from around 15 countries; alumni now hold academic and research positions and work in ministries, transport agencies, and mobility- and data-oriented companies.
+Before joining the Technion, I was a faculty member at the Technical University of Denmark (DTU) and at the Hebrew University of Jerusalem. I have held visiting positions as an Eleonore Trefftz guest professor at TU Dresden and as an AIANI Fellow at the University of Innsbruck, and I am an external collaborator with the TRANSyT Transportation Research Center at Universidad Politécnica de Madrid. Across three institutions, I have supervised more than 30 graduate students from around 15 countries; alumni now hold academic and research positions and work in ministries, transport agencies, and mobility- and data-oriented companies ([selected alumni]({{ '/team/alumni/' | relative_url }}))
 
 ### Field roles
 
