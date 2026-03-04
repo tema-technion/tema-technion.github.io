@@ -509,7 +509,7 @@ a:hover{ text-decoration: none; }
 /* Previous naturally stays left */
 
 /* =========================
-   TEAM PAGE
+   PI TEAM PAGE
    ========================= */
 
 .page.inner .profile{
@@ -577,9 +577,10 @@ a:hover{ text-decoration: none; }
 }
 /* LINKS (Google Scholar · ORCID · Contact) */
 .page.inner .profile-links{
-  margin-top: 8px;
-  font-size: 15px;        /* slightly smaller than role */
-  color: var(--ink-700);
+  margin-top: 6px;
+  font-size: 14px;      /* smaller than affiliation */
+  color: var(--ink-600);
+  opacity: 0.9;
 }
 
 .page.inner .profile-links a{
