@@ -2,6 +2,7 @@
 layout: page
 title: Selected Alumni
 permalink: /team/alumni/
+class: inner
 ---
 
 Across three institutions I have supervised more than 30 graduate students from around 15 countries.  
