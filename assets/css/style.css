@@ -584,7 +584,7 @@ a:hover{ text-decoration: none; }
 }
 
 .page.inner .profile-links a{
-  color: var(--ink-700);  /* avoid bright blue */
+  color: var(--ink-600);  /* avoid bright blue */
   text-decoration: none;
 }
 
