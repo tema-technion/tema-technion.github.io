@@ -664,85 +664,90 @@ a:hover{ text-decoration: none; }
 }
 
 /* ======================================
-   FINAL ALUMNI TWEAK – softer + tighter
+   ALUMNI PAGE – text-only people blocks
    ====================================== */
 
-/* Container, a bit narrower */
-.page.inner .alumni-page{
-  max-width: 720px;
+.page.inner.alumni-page{
+  max-width: 760px;
   margin: 0 auto;
-  padding: 24px 20px 36px;
+  padding: 24px 20px 40px;
 }
 
-/* H1 stays as in inner pages, so no change needed here */
+/* Headings */
 
-/* Section labels: small, quiet, not blue */
-.page.inner .alumni-page h2{
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin: 20px 0 6px 0;
-  color: var(--ink-600);
+.page.inner.alumni-page h1{
+  font-size: 34px;
+  font-weight: 550;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 0 0 16px 0;
+  color: var(--ink-900);
 }
 
-/* Intro text */
-.page.inner .alumni-page > p{
-  font-size: 15px;
-  line-height: 1.45;
+.page.inner.alumni-page h2{
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  margin: 24px 0 8px 0;
+  color: var(--ink-900);   /* no blue, calmer */
+}
+
+/* Intro + note */
+
+.page.inner.alumni-page > p{
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0 0 8px 0;
   color: var(--ink-700);
 }
 
-/* Disclaimer line – slightly more space below */
-.page.inner .alumni-page > p:nth-of-type(2){
-  margin-bottom: 14px;
-}
-
-/* Each person’s block (all 3 lines live in one <p>) */
-.page.inner .alumni-page p{
+.page.inner.alumni-page .alumni-note{
   font-size: 14px;
-  line-height: 1.35;
-  margin: 0 0 6px 0;
-  color: var(--ink-700);
+  font-style: italic;
 }
 
-/* Name – the only really bold thing */
-.page.inner .alumni-page p strong{
-  display: block;
-  margin-top: 10px;     /* gap from previous person */
-  margin-bottom: 2px;
-  font-size: 16px;
+/* Individual alumni blocks */
+
+.page.inner.alumni-page .alumni-item{
+  padding: 14px 0 12px;
+  border-bottom: 1px solid rgba(37,55,78,0.08);
+}
+
+.page.inner.alumni-page .alumni-name{
+  font-size: 18px;
   font-weight: 650;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--ink-900);
+  margin: 0 0 2px 0;
 }
 
-/* Theme line (the *...* right after name):
-   same size as team-focus but not shouting */
-.page.inner .alumni-page p strong + br + em{
-  display: block;
-  font-style: normal;   /* no italics look */
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--ink-800);
-  margin-bottom: 0;
+.page.inner.alumni-page .alumni-focus{
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--ink-900);
+  margin: 0 0 2px 0;
 }
 
-/* Horizontal rule between PhD / MSc sections */
-.page.inner .alumni-page hr{
-  border: 0;
-  height: 1px;
-  margin: 12px 0;
-  background: rgba(37,55,78,0.12);
+.page.inner.alumni-page .alumni-meta{
+  font-size: 14px;
+  color: var(--ink-700);
+  margin: 0;
 }
 
-/* Link at bottom */
-.page.inner .alumni-page a{
+/* Back link */
+
+.page.inner.alumni-page + p a{
   color: var(--blue-cta);
   text-decoration: none;
 }
-.page.inner .alumni-page a:hover{
+.page.inner.alumni-page + p a:hover{
   color: var(--blue-lab);
   text-decoration: underline;
+}
+
+/* Mobile fine by default – single column text */
+@media (max-width: 600px){
+  .page.inner.alumni-page{
+    padding: 20px 16px 32px;
+  }
 }
