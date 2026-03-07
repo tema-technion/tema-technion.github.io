@@ -763,7 +763,7 @@ a:hover{ text-decoration: none; }
   font-size: 16px;                     /* was 18 */
   font-weight: 650;
   letter-spacing: -0.01em;
-  margin: 0 0 1px 0;
+  margin: 0 0 3px 0;
 }
 
 /* Focus line: softer + blue dot for visual interest */
@@ -771,7 +771,7 @@ a:hover{ text-decoration: none; }
   font-size: 13px;                     /* a bit smaller */
   font-weight: 500;                    /* not shouting */
   color: var(--ink-800);
-  margin: 0 0 1px 0;
+  margin: 0 0 3px 0;
 }
 
 /* Meta line: same size as focus, a bit quieter */
