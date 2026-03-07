@@ -774,11 +774,6 @@ a:hover{ text-decoration: none; }
   margin: 0 0 1px 0;
 }
 
-.page.inner .alumni-page .alumni-focus::before{
-  content: "• ";
-  color: var(--blue-lab);              /* tiny accent, same palette */
-}
-
 /* Meta line: same size as focus, a bit quieter */
 .page.inner .alumni-page .alumni-meta{
   font-size: 13px;
