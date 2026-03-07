@@ -8,7 +8,7 @@ permalink: /team/alumni/
 Over the years, I have supervised more than 30 graduate students from around 15 countries. Former students now work in academia, industry, and public agencies.
 *Roles/affiliations are listed as last known and may have changed.*
 
-## Visiting doctoral researchers
+### Visiting doctoral researchers
 
 **Boshuai Qiao**  
 *Research with me:* Vehicle technology (EV) • Data & models (market / adoption modelling)  
@@ -20,7 +20,7 @@ Over the years, I have supervised more than 30 graduate students from around 15 
 
 ---
 
-## PhD alumni
+### PhD alumni
 
 **Aliasghar Mehdizadeh Dastjerdi**  
 *Research with me:* Digital mobility (information systems) • Human–machine (acceptance)  • Decision models  
@@ -48,7 +48,7 @@ Over the years, I have supervised more than 30 graduate students from around 15 
 
 ---
 
-## MSc alumni (selected)
+### MSc alumni (selected)
 
 **Maytal Aaron Sirote**  
 *Research with me:* Policy & decision systems (analytics / prediction) • Data-driven methods  
