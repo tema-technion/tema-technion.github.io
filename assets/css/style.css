@@ -663,128 +663,57 @@ a:hover{ text-decoration: none; }
   }
 }
 
-/* ===== Alumni PAGE ===== */
+/* ======================================
+   ALUMNI PAGE LAYOUT (inherits .page.inner typography)
+   ====================================== */
+
+/* Grid: 2 columns on desktop, 1 column on mobile */
 .page.inner .alumni-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px 56px; /* row gap, column gap */
+  gap: 18px 44px;
+  margin: 10px 0 6px;
 }
-
-@media (max-width: 800px){
+@media (max-width: 900px){
   .page.inner .alumni-grid{
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 14px;
   }
 }
 
-/* ======================================
-   INNER ALUMNI
-   Mirrors .page.inner styling (so alumni pages can use .page.alumni)
-   ====================================== */
-
-/* Colors */
-.page.alumni h1{
-  color: var(--ink-900);
-}
-.page.alumni h2{
-  color: var(--ink-900);
-}
-.page.alumni h3{
-  color: var(--ink-700);
+/* Each person: compact card */
+.page.inner .alumni-item{
+  padding: 14px 14px 12px;
+  border: 1px solid rgba(37,55,78,0.10);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.65);
 }
 
-.page.alumni p,
-.page.alumni li{
-  color: var(--ink-700);
-}
-
-/* Links match homepage accent language */
-.page.alumni p a,
-.page.alumni li a{
-  color: var(--blue-cta);
-}
-.page.alumni p a:hover,
-.page.alumni li a:hover{
-  color: var(--blue-lab);
-}
-
-/* Optional: make separators consistent */
-.page.alumni hr{
-  border: 0;
-  height: 1px;
-  background: rgba(37, 55, 78, 0.12); /* derived from ink-900 */
-}
-
-/* ======================================
-   INNER ALUMNI TYPOGRAPHY & SPACING SYSTEM
-   Mirrors .page.inner
-   ====================================== */
-
-.page.alumni{
-  max-width: 760px;     /* key: prevents long unreadable lines */
-  margin: 0 auto;
-  padding: 22px 20px;
-}
-
-/* Paragraph rhythm */
-.page.alumni p{
+/* Name line */
+.page.inner .alumni-item .alumni-name{
+  margin: 0 0 6px 0;
   font-size: 16px;
-  line-height: 1.5;
-  margin: 0 0 10px 0;
-}
-
-.page.alumni h1{
-  font-size: 34px;           /* smaller than hero (56px) */
-  font-weight: 550;          /* same as hero */
-  letter-spacing: -0.04em;   /* same tight tracking */
-  line-height: 1.1;
-  margin: 0 0 12px 0;
-}
-
-/* Major section */
-.page.alumni h2{
-  font-size: 24px;
-  line-height: 1.1;
-  margin: 12px 0 6px 0;   /* more air above sections */
-  color: var(--blue-lab);
-}
-
-/* Subsection */
-.page.alumni h3{
-  font-size: 18px;
-  line-height: 1.1;
-  margin: 12px 0 6px 0;
+  font-weight: 700;
   color: var(--ink-900);
+  line-height: 1.2;
 }
 
-/* Reduce separator heaviness */
-.page.alumni hr{
-  margin: 14px 0;
+/* Meta lines */
+.page.inner .alumni-item .alumni-meta{
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--ink-700);
+}
+.page.inner .alumni-item .alumni-meta:last-child{
+  margin-bottom: 0;
 }
 
-/* Lists */
-.page.alumni ul,
-.page.alumni ol{
-  margin: 6px 0 12px 18px;
+/* Labels (Research with me / Recent position) slightly muted */
+.page.inner .alumni-item .alumni-label{
+  color: var(--ink-600);
+  font-weight: 650;
 }
-
-.page.alumni li{
-  margin-bottom: 4px;
-  line-height: 1.5;
-}
-
-/* =========================
-   ALUMNI GRID
-   ========================= */
-.page.alumni .alumni-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px 56px; /* row gap, column gap */
-}
-
-@media (max-width: 800px){
-  .page.alumni .alumni-grid{
-    grid-template-columns: 1fr;
     gap: 20px;
   }
 }
