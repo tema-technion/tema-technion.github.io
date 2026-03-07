@@ -664,17 +664,18 @@ a:hover{ text-decoration: none; }
 }
 
 /* ======================================
-   ALUMNI PAGE – clean 3-line people blocks
+   ALUMNI PAGE – compact, clean blocks
    ====================================== */
 
-.alumni-page{
+/* Container */
+.page.inner .alumni-page{
   max-width: 760px;
   margin: 0 auto;
   padding: 24px 20px 32px;
 }
 
-/* Headings */
-.alumni-page h1{
+/* H1 – same as other inner pages */
+.page.inner .alumni-page h1{
   font-size: 34px;
   font-weight: 550;
   letter-spacing: -0.04em;
@@ -683,67 +684,70 @@ a:hover{ text-decoration: none; }
   color: var(--ink-900);
 }
 
-.alumni-page h2{
-  font-size: 24px;
+/* H2 – small, calm section labels */
+.page.inner .alumni-page h2{
+  font-size: 18px;
   font-weight: 600;
-  letter-spacing: -0.02em;
-  margin: 18px 0 8px 0;
-  color: var(--blue-lab);
+  letter-spacing: -0.01em;
+  margin: 16px 0 4px 0;   /* less air below */
+  color: var(--ink-900);
 }
 
-/* Intro paragraph */
-.alumni-page > p{
+/* Intro paragraph at the top */
+.page.inner .alumni-page > p{
   font-size: 16px;
   line-height: 1.5;
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
   color: var(--ink-700);
 }
 
-/* One paragraph per person: **Name** + *theme* + affiliation text */
+/* Disclaimer line: a bit more gap below */
+.page.inner .alumni-page > p:nth-of-type(2){
+  margin-bottom: 16px;
+}
 
-.alumni-page p{
-  margin: 0 0 10px 0;
+/* Default paragraph for each person block */
+.page.inner .alumni-page p{
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.35;      /* slightly tighter */
+  margin: 0 0 8px 0;      /* smaller gap between people */
   color: var(--ink-700);
 }
 
-/* Name – like smaller team-name */
-.alumni-page p strong{
+/* NAME – compact, like a small team-name */
+.page.inner .alumni-page p strong{
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 2px;     /* small space to theme line */
   font-size: 18px;
   font-weight: 650;
   letter-spacing: -0.02em;
   color: var(--ink-900);
 }
 
-/* Theme / mechanics – like team-focus */
-.alumni-page p em{
+/* THEME line – only the em immediately after the name */
+.page.inner .alumni-page p strong + br + em{
   display: block;
-  font-style: normal;  /* no italics look */
+  font-style: normal;     /* no italics look */
   font-size: 14px;
   font-weight: 650;
   color: var(--ink-900);
-  margin-bottom: 2px;
+  margin-bottom: 0;       /* theme sticks close to affiliation */
 }
 
-/* Affiliation stays as the normal paragraph text (3rd line) */
-
-/* Separators between sections */
-.alumni-page hr{
+/* Separators between PhD / MSc sections */
+.page.inner .alumni-page hr{
   border: 0;
   height: 1px;
-  margin: 16px 0;
+  margin: 12px 0;
   background: rgba(37,55,78,0.12);
 }
 
 /* Bottom link */
-.alumni-page a{
+.page.inner .alumni-page a{
   color: var(--blue-cta);
   text-decoration: none;
 }
-.alumni-page a:hover{
+.page.inner .alumni-page a:hover{
   color: var(--blue-lab);
   text-decoration: underline;
 }
