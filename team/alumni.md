@@ -4,7 +4,7 @@ title: Selected Alumni
 permalink: /team/alumni/
 ---
 
-<div class="alumni-page">
+<div class="alumni-page" markdown="1">
 
 # Alumni
 
