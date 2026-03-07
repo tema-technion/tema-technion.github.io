@@ -664,90 +664,37 @@ a:hover{ text-decoration: none; }
 }
 
 /* ======================================
-   ALUMNI PAGE – text-only people blocks
+   Alumni micro-tuning – lighter + less boring
    ====================================== */
 
-.page.inner.alumni-page{
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 24px 20px 40px;
+.page.inner .alumni-page .alumni-item{
+  padding: 10px 0 8px;                 /* a bit tighter */
 }
 
-/* Headings */
-
-.page.inner.alumni-page h1{
-  font-size: 34px;
-  font-weight: 550;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
-  margin: 0 0 16px 0;
-  color: var(--ink-900);
-}
-
-.page.inner.alumni-page h2{
-  font-size: 20px;
+/* Name: slightly smaller, still strong */
+.page.inner .alumni-page .alumni-name{
+  font-size: 16px;                     /* was 18 */
   font-weight: 650;
   letter-spacing: -0.01em;
-  margin: 24px 0 8px 0;
-  color: var(--ink-900);   /* no blue, calmer */
+  margin: 0 0 1px 0;
 }
 
-/* Intro + note */
-
-.page.inner.alumni-page > p{
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0 0 8px 0;
-  color: var(--ink-700);
+/* Focus line: softer + blue dot for visual interest */
+.page.inner .alumni-page .alumni-focus{
+  font-size: 13px;                     /* a bit smaller */
+  font-weight: 500;                    /* not shouting */
+  color: var(--ink-800);
+  margin: 0 0 1px 0;
 }
 
-.page.inner.alumni-page .alumni-note{
-  font-size: 14px;
-  font-style: italic;
+.page.inner .alumni-page .alumni-focus::before{
+  content: "• ";
+  color: var(--blue-lab);              /* tiny accent, same palette */
 }
 
-/* Individual alumni blocks */
-
-.page.inner.alumni-page .alumni-item{
-  padding: 14px 0 12px;
-  border-bottom: 1px solid rgba(37,55,78,0.08);
-}
-
-.page.inner.alumni-page .alumni-name{
-  font-size: 18px;
-  font-weight: 650;
-  letter-spacing: -0.02em;
-  color: var(--ink-900);
-  margin: 0 0 2px 0;
-}
-
-.page.inner.alumni-page .alumni-focus{
-  font-size: 14px;
-  font-weight: 650;
-  color: var(--ink-900);
-  margin: 0 0 2px 0;
-}
-
-.page.inner.alumni-page .alumni-meta{
-  font-size: 14px;
+/* Meta line: same size as focus, a bit quieter */
+.page.inner .alumni-page .alumni-meta{
+  font-size: 13px;
   color: var(--ink-700);
   margin: 0;
-}
-
-/* Back link */
-
-.page.inner.alumni-page + p a{
-  color: var(--blue-cta);
-  text-decoration: none;
-}
-.page.inner.alumni-page + p a:hover{
-  color: var(--blue-lab);
-  text-decoration: underline;
-}
-
-/* Mobile fine by default – single column text */
-@media (max-width: 600px){
-  .page.inner.alumni-page{
-    padding: 20px 16px 32px;
-  }
 }
