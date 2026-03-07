@@ -664,56 +664,86 @@ a:hover{ text-decoration: none; }
 }
 
 /* ======================================
-   ALUMNI PAGE LAYOUT (inherits .page.inner typography)
+   ALUMNI PAGE – clean 3-line people blocks
    ====================================== */
 
-/* Grid: 2 columns on desktop, 1 column on mobile */
-.page.inner .alumni-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px 44px;
-  margin: 10px 0 6px;
-}
-@media (max-width: 900px){
-  .page.inner .alumni-grid{
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
+.alumni-page{
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 20px 32px;
 }
 
-/* Each person: compact card */
-.page.inner .alumni-item{
-  padding: 14px 14px 12px;
-  border: 1px solid rgba(37,55,78,0.10);
-  border-radius: 14px;
-  background: rgba(255,255,255,0.65);
-}
-
-/* Name line */
-.page.inner .alumni-item .alumni-name{
-  margin: 0 0 6px 0;
-  font-size: 16px;
-  font-weight: 700;
+/* Headings */
+.alumni-page h1{
+  font-size: 34px;
+  font-weight: 550;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 0 0 14px 0;
   color: var(--ink-900);
-  line-height: 1.2;
 }
 
-/* Meta lines */
-.page.inner .alumni-item .alumni-meta{
-  margin: 0 0 6px 0;
-  font-size: 14px;
-  line-height: 1.35;
+.alumni-page h2{
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 18px 0 8px 0;
+  color: var(--blue-lab);
+}
+
+/* Intro paragraph */
+.alumni-page > p{
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
   color: var(--ink-700);
 }
-.page.inner .alumni-item .alumni-meta:last-child{
-  margin-bottom: 0;
+
+/* One paragraph per person: **Name** + *theme* + affiliation text */
+
+.alumni-page p{
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--ink-700);
 }
 
-/* Labels (Research with me / Recent position) slightly muted */
-.page.inner .alumni-item .alumni-label{
-  color: var(--ink-600);
+/* Name – like smaller team-name */
+.alumni-page p strong{
+  display: block;
+  margin-bottom: 4px;
+  font-size: 18px;
   font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--ink-900);
 }
-    gap: 20px;
-  }
+
+/* Theme / mechanics – like team-focus */
+.alumni-page p em{
+  display: block;
+  font-style: normal;  /* no italics look */
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--ink-900);
+  margin-bottom: 2px;
+}
+
+/* Affiliation stays as the normal paragraph text (3rd line) */
+
+/* Separators between sections */
+.alumni-page hr{
+  border: 0;
+  height: 1px;
+  margin: 16px 0;
+  background: rgba(37,55,78,0.12);
+}
+
+/* Bottom link */
+.alumni-page a{
+  color: var(--blue-cta);
+  text-decoration: none;
+}
+.alumni-page a:hover{
+  color: var(--blue-lab);
+  text-decoration: underline;
 }
