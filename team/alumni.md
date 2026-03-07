@@ -6,7 +6,6 @@ permalink: /alumni/
 # Alumni
 Over the years, I have supervised more than 30 graduate students from around 15 countries. Former students now work in academia, industry, and public agencies.
 *Roles/affiliations are listed as last known and may have changed.*
----
 
 ## Visiting doctoral researchers
 
