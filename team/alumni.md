@@ -1,121 +1,257 @@
 ---
 layout: default
-title: Selected Alumni
+title: Alumni
 permalink: /team/alumni/
 ---
 
-<div class="alumni-page" markdown="1">
+<main class="page inner alumni-page">
 
-# Alumni
+  <h1>Alumni</h1>
 
-Over the years, I have supervised more than 30 graduate students from around 15 countries. Former students now work in academia, industry, and public agencies.
+  <p>
+    Over the years, I have supervised more than 30 graduate students from around 15 countries.
+    Former students now work in academia, industry, and public agencies.
+  </p>
+  <p class="alumni-note">
+    Roles/affiliations are listed as last known and may have changed.
+  </p>
 
-*Roles/affiliations are listed as last known and may have changed.*
+  <h2>Visiting doctoral researchers</h2>
 
-## Visiting doctoral researchers
+  <div class="alumni-item">
+    <div class="alumni-name">Boshuai Qiao</div>
+    <div class="alumni-focus">
+      Vehicle technology (EV) · Data &amp; models (market / adoption modelling)
+    </div>
+    <div class="alumni-meta">
+      Southeast University (Nanjing)
+    </div>
+  </div>
 
-**Boshuai Qiao**  
-*Vehicle technology (EV) • Data & models (market / adoption modelling)*  
-Southeast University (Nanjing)
+  <div class="alumni-item">
+    <div class="alumni-name">Yang Wang</div>
+    <div class="alumni-focus">
+      Policy decision support (scenarios) · Decision models (utility–regret / human–machine)
+    </div>
+    <div class="alumni-meta">
+      Principal Engineer, Transport Planning &amp; Modelling, Vectio (Madrid)
+    </div>
+  </div>
 
-**Yang Wang**  
-*Policy decision support (scenarios) • Decision models (utility–regret / human–machine)*  
-Principal Engineer, Transport Planning & Modelling, Vectio (Madrid)
+  <h2>PhD alumni</h2>
 
----
+  <div class="alumni-item">
+    <div class="alumni-name">Aliasghar Mehdizadeh Dastjerdi</div>
+    <div class="alumni-focus">
+      Digital mobility (information systems) · Human–machine (acceptance) · Decision models
+    </div>
+    <div class="alumni-meta">
+      Data Scientist, PACE Aerospace &amp; IT
+    </div>
+  </div>
 
-## PhD alumni
+  <div class="alumni-item">
+    <div class="alumni-name">Gebeyehu M. Fetene</div>
+    <div class="alumni-focus">
+      Vehicle technology (EV charging) · Human–machine (interaction) · Decision models
+    </div>
+    <div class="alumni-meta">
+      Assistant Professor of Economics, Addis Ababa University
+    </div>
+  </div>
 
-**Aliasghar Mehdizadeh Dastjerdi**  
-*Digital mobility (information systems) • Human–machine (acceptance) • Decision models*  
-Data Scientist, PACE Aerospace & IT
+  <div class="alumni-item">
+    <div class="alumni-name">Jesper Bláfoss Ingvardson</div>
+    <div class="alumni-focus">
+      Public transport · Decision models
+    </div>
+    <div class="alumni-meta">
+      Associate Professor, DTU Management, Technical University of Denmark
+    </div>
+  </div>
 
-**Gebeyehu M. Fetene**  
-*Vehicle technology (EV charging) • Human–machine (interaction) • Decision models*  
-Assistant Professor of Economics, Addis Ababa University
+  <div class="alumni-item">
+    <div class="alumni-name">Kira H. Janstrup</div>
+    <div class="alumni-focus">
+      Safety, risk &amp; resilience · Data &amp; GIS (crash modelling)
+    </div>
+    <div class="alumni-meta">
+      Assistant Professor, DTU Management (Young Researcher Award, 2016)
+    </div>
+  </div>
 
-**Jesper Bláfoss Ingvardson**  
-*Public transport • Decision models*  
-Associate Professor, DTU Management, Technical University of Denmark
+  <div class="alumni-item">
+    <div class="alumni-name">Rumana Sarker Islam</div>
+    <div class="alumni-focus">
+      Public transport · Human–machine (information &amp; user response) · Decision models
+    </div>
+    <div class="alumni-meta">
+      Research Fellow, Monash University (Friedrich-List Prize, 2021)
+    </div>
+  </div>
 
-**Kira H. Janstrup**  
-*Safety, risk & resilience • Data & GIS (crash modelling)*  
-Assistant Professor, DTU Management *(Young Researcher Award, 2016)*
+  <div class="alumni-item">
+    <div class="alumni-name">Guillermo Velasquez</div>
+    <div class="alumni-focus">
+      Digital mobility &amp; vehicle technology · Data &amp; models
+    </div>
+    <div class="alumni-meta">
+      PhD in smart mobility, Universidad Politécnica de Madrid
+    </div>
+  </div>
 
-**Rumana Sarker Islam**  
-*Public transport • Human–machine (information & user response) • Decision models*  
-Research Fellow, Monash University *(Friedrich-List Prize, 2021)*
+  <h2>MSc alumni (selected)</h2>
 
-**Guillermo Velasquez**  
-*Digital mobility & vehicle technology • Data & models*  
-PhD in smart mobility, Universidad Politécnica de Madrid
+  <div class="alumni-item">
+    <div class="alumni-name">Maytal Aaron Sirote</div>
+    <div class="alumni-focus">
+      Policy &amp; decision systems (analytics / prediction) · Data-driven methods
+    </div>
+    <div class="alumni-meta">
+      Kraus-Chen Traffic &amp; Roads Engineering (Israel)
+    </div>
+  </div>
 
----
+  <div class="alumni-item">
+    <div class="alumni-name">Hiba Bawardi</div>
+    <div class="alumni-focus">
+      Policy decision support · Decision models
+    </div>
+    <div class="alumni-meta">
+      Project Manager, AVIV AMCG Urban Planning and Consulting
+    </div>
+  </div>
 
-## MSc alumni (selected)
+  <div class="alumni-item">
+    <div class="alumni-name">Dagmara Wrzesinska</div>
+    <div class="alumni-focus">
+      Green &amp; active mobility · Lived experience (cycling culture) · Decision models
+    </div>
+    <div class="alumni-meta">
+      MaaS &amp; Urban Mobility Specialist, Trafi (Belgium)
+    </div>
+  </div>
 
-**Maytal Aaron Sirote**  
-*Policy & decision systems (analytics / prediction) • Data-driven methods*  
-Kraus-Chen Traffic & Roads Engineering (Israel)
+  <div class="alumni-item">
+    <div class="alumni-name">Dalit Harel</div>
+    <div class="alumni-focus">
+      Policy decision support · Lived experience (resilience)
+    </div>
+    <div class="alumni-meta">
+      PhD, Hebrew University of Jerusalem
+    </div>
+  </div>
 
-**Hiba Bawardi**  
-*Policy decision support • Decision models*  
-Project Manager, AVIV AMCG Urban Planning and Consulting
+  <div class="alumni-item">
+    <div class="alumni-name">Yarden Lavid</div>
+    <div class="alumni-focus">
+      Safety, risk &amp; resilience · Data &amp; models (road infrastructure / safety)
+    </div>
+    <div class="alumni-meta">
+      Transportation Engineer &amp; Aviation Consultant, AGL Aviation (Israel)
+    </div>
+  </div>
 
-**Dagmara Wrzesinska**  
-*Green & active mobility • Lived experience (cycling culture) • Decision models*  
-MaaS & Urban Mobility Specialist, Trafi (Belgium)
+  <div class="alumni-item">
+    <div class="alumni-name">Ravid Luria</div>
+    <div class="alumni-focus">
+      Green &amp; active mobility · Lived experience (road sharing)
+    </div>
+    <div class="alumni-meta">
+      Transport consultant, Ayalon Highways
+    </div>
+  </div>
 
-**Dalit Harel**  
-*Policy decision support • Lived experience (resilience)*  
-PhD, Hebrew University of Jerusalem
+  <div class="alumni-item">
+    <div class="alumni-name">Francesco Manca</div>
+    <div class="alumni-focus">
+      Green &amp; active mobility · Decision models (bike sharing)
+    </div>
+    <div class="alumni-meta">
+      Senior Consultant, Amey
+    </div>
+  </div>
 
-**Yarden Lavid**  
-*Safety, risk & resilience • Data & models (road infrastructure / safety)*  
-Transportation Engineer & Aviation Consultant, AGL Aviation (Israel)
+  <div class="alumni-item">
+    <div class="alumni-name">Dmitrijs Popoks</div>
+    <div class="alumni-focus">
+      Policy &amp; decision systems (analytics / prediction) · Data-driven &amp; smart methods (big data)
+    </div>
+    <div class="alumni-meta">
+      Data &amp; Business Intelligence Specialist, Entain (Riga, last known)
+    </div>
+  </div>
 
-**Ravid Luria**  
-*Green & active mobility • Lived experience (road sharing)*  
-Transport consultant, Ayalon Highways
+  <div class="alumni-item">
+    <div class="alumni-name">Alexandre Patrier</div>
+    <div class="alumni-focus">
+      Safety, risk &amp; resilience · Data &amp; GIS (crash patterns)
+    </div>
+    <div class="alumni-meta">
+      Rail Infrastructure Engineer, Egis Rail
+    </div>
+  </div>
 
-**Francesco Manca**  
-*Green & active mobility • Decision models (bike sharing)*  
-Senior Consultant, Amey
+  <div class="alumni-item">
+    <div class="alumni-name">Omer Rake</div>
+    <div class="alumni-focus">
+      Digital mobility (apps / gamification) · Human–machine (behaviour change)
+    </div>
+    <div class="alumni-meta">
+      PhD, Hebrew University of Jerusalem
+    </div>
+  </div>
 
-**Dmitrijs Popoks**  
-*Policy & decision systems (analytics / prediction) • Data-driven & smart methods (big data)*  
-Data & Business Intelligence Specialist, Entain (Riga) *(as last known)*
+  <div class="alumni-item">
+    <div class="alumni-name">Pedro Henrique da Silva</div>
+    <div class="alumni-focus">
+      Public transport · Decision models
+    </div>
+    <div class="alumni-meta">
+      Infrastructure Advisor, CODEMGE (Brazil)
+    </div>
+  </div>
 
-**Alexandre Patrier**  
-*Safety, risk & resilience • Data & GIS (crash patterns)*  
-Rail Infrastructure Engineer, Egis Rail
+  <div class="alumni-item">
+    <div class="alumni-name">Shaun Bortei-Doku</div>
+    <div class="alumni-focus">
+      Safety, risk &amp; resilience · Data-driven &amp; smart methods (infrastructure analytics)
+    </div>
+    <div class="alumni-meta">
+      Operations &amp; Maintenance, Hungarian Public Roads (Magyar Közút)
+    </div>
+  </div>
 
-**Omer Rake**  
-*Digital mobility (apps / gamification) • Human–machine (behavior change)*  
-PhD, Hebrew University of Jerusalem
+  <div class="alumni-item">
+    <div class="alumni-name">Kostas Vavatsoulas</div>
+    <div class="alumni-focus">
+      Safety, risk &amp; resilience · Data &amp; GIS (injury severity)
+    </div>
+    <div class="alumni-meta">
+      Principal Transport Engineer, Jacobs
+    </div>
+  </div>
 
-**Pedro Henrique da Silva**  
-*Public transport • Decision models*  
-Infrastructure Advisor, CODEMGE (Brazil)
+  <div class="alumni-item">
+    <div class="alumni-name">Tamara Kerzhner</div>
+    <div class="alumni-focus">
+      Policy decision support · Spatial context (mobility barriers)
+    </div>
+    <div class="alumni-meta">
+      Assistant Professor of Urban and Regional Planning, Technion
+    </div>
+  </div>
 
-**Shaun Bortei-Doku**  
-*Safety, risk & resilience • Data-driven & smart methods (infrastructure analytics)*  
-Operations & Maintenance, Hungarian Public Roads (Magyar Közút)
+  <div class="alumni-item">
+    <div class="alumni-name">Yodfat Ben-Shalom</div>
+    <div class="alumni-focus">
+      Data-driven &amp; smart methods (analytics) · GIS / evidence
+    </div>
+    <div class="alumni-meta">
+      Data Analyst, Jerusalem Institute for Policy Research
+    </div>
+  </div>
 
-**Kostas Vavatsoulas**  
-*Safety, risk & resilience • Data & GIS (injury severity)*  
-Principal Transport Engineer, Jacobs
+</main>
 
-**Tamara Kerzhner**  
-*Policy decision support • Spatial context (mobility barriers)*  
-Assistant Professor of Urban and Regional Planning, Technion
-
-**Yodfat Ben-Shalom**  
-*Data-driven & smart methods (analytics) • GIS / evidence*  
-Data Analyst, Jerusalem Institute for Policy Research
-
----
-
-<a href="{{ '/team/' | relative_url }}">← Back to Team</a>
-
-</div> Research
+<p><a href="{{ '/team/' | relative_url }}">← Back to Team</a></p>
