@@ -4,9 +4,6 @@ title: Selected Alumni
 permalink: /team/alumni/
 ---
 
-<main class="page inner">
-  {{
-
 # Alumni
 Over the years, I have supervised more than 30 graduate students from around 15 countries. Former students now work in academia, industry, and public agencies.
 *Roles/affiliations are listed as last known and may have changed.*
@@ -113,6 +110,4 @@ Over the years, I have supervised more than 30 graduate students from around 15 
 *Research with me:* Data-driven & smart methods (analytics) • GIS / evidence  
 *Recent position:* Data Analyst, Jerusalem Institute for Policy Research
 
- }}
-</main>
 <a href="{{ '/team/' | relative_url }}">← Back to Team</a>
