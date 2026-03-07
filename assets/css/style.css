@@ -664,77 +664,72 @@ a:hover{ text-decoration: none; }
 }
 
 /* ======================================
-   ALUMNI PAGE – compact, clean blocks
+   FINAL ALUMNI TWEAK – softer + tighter
    ====================================== */
 
-/* Container */
+/* Container, a bit narrower */
 .page.inner .alumni-page{
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 24px 20px 32px;
+  padding: 24px 20px 36px;
 }
 
-/* H1 – same as other inner pages */
-.page.inner .alumni-page h1{
-  font-size: 34px;
-  font-weight: 550;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
-  margin: 0 0 14px 0;
-  color: var(--ink-900);
-}
+/* H1 stays as in inner pages, so no change needed here */
 
-/* H2 – small, calm section labels */
+/* Section labels: small, quiet, not blue */
 .page.inner .alumni-page h2{
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: -0.01em;
-  margin: 16px 0 4px 0;   /* less air below */
-  color: var(--ink-900);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 20px 0 6px 0;
+  color: var(--ink-600);
 }
 
-/* Intro paragraph at the top */
+/* Intro text */
 .page.inner .alumni-page > p{
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.45;
+  margin: 0 0 8px 0;
+  color: var(--ink-700);
+}
+
+/* Disclaimer line – slightly more space below */
+.page.inner .alumni-page > p:nth-of-type(2){
+  margin-bottom: 14px;
+}
+
+/* Each person’s block (all 3 lines live in one <p>) */
+.page.inner .alumni-page p{
+  font-size: 14px;
+  line-height: 1.35;
   margin: 0 0 6px 0;
   color: var(--ink-700);
 }
 
-/* Disclaimer line: a bit more gap below */
-.page.inner .alumni-page > p:nth-of-type(2){
-  margin-bottom: 16px;
-}
-
-/* Default paragraph for each person block */
-.page.inner .alumni-page p{
-  font-size: 15px;
-  line-height: 1.35;      /* slightly tighter */
-  margin: 0 0 8px 0;      /* smaller gap between people */
-  color: var(--ink-700);
-}
-
-/* NAME – compact, like a small team-name */
+/* Name – the only really bold thing */
 .page.inner .alumni-page p strong{
   display: block;
-  margin-bottom: 2px;     /* small space to theme line */
-  font-size: 18px;
+  margin-top: 10px;     /* gap from previous person */
+  margin-bottom: 2px;
+  font-size: 16px;
   font-weight: 650;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   color: var(--ink-900);
 }
 
-/* THEME line – only the em immediately after the name */
+/* Theme line (the *...* right after name):
+   same size as team-focus but not shouting */
 .page.inner .alumni-page p strong + br + em{
   display: block;
-  font-style: normal;     /* no italics look */
-  font-size: 14px;
-  font-weight: 650;
-  color: var(--ink-900);
-  margin-bottom: 0;       /* theme sticks close to affiliation */
+  font-style: normal;   /* no italics look */
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-800);
+  margin-bottom: 0;
 }
 
-/* Separators between PhD / MSc sections */
+/* Horizontal rule between PhD / MSc sections */
 .page.inner .alumni-page hr{
   border: 0;
   height: 1px;
@@ -742,7 +737,7 @@ a:hover{ text-decoration: none; }
   background: rgba(37,55,78,0.12);
 }
 
-/* Bottom link */
+/* Link at bottom */
 .page.inner .alumni-page a{
   color: var(--blue-cta);
   text-decoration: none;
